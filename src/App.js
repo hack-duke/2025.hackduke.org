@@ -14,12 +14,30 @@ function App () {
   return (
     <div className='font-sans'>
       <Navbar />
-      <Home />
-      <About />
-      <Tracks />
-      <Schedule />
-      <FAQ />
-      <Sponsors />
+
+      <section id="home">
+        <Home />
+      </section>
+      
+      <section id="about">
+        <About />
+      </section>
+      
+      <section id="tracks">
+        <Tracks />
+      </section>
+      
+      <section id="schedule">
+        <Schedule />
+      </section>
+      
+      <section id="faq">
+        <FAQ />
+      </section>
+      
+      <section id="sponsors">
+        <Sponsors />
+      </section>
     </div>
   )
 }

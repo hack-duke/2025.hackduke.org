@@ -1,12 +1,13 @@
 export const Home = () => {
   return (
-    <div>
-      <section className='bg-background w-screen text-white'>
-        <div className='flex flex-col items-center justify-center h-screen'>
-          <h1 className='text-5xl'>Welcome to Hackathon Starter</h1>
-          <p className='text-xl'>This is a starter template for a hackathon website</p>
-        </div>
-      </section>
+    <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-home_bg1 to-home_bg2 text-white">
+      <img src="/images/Waves.png" alt="Description" class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
+      <img className="flex object-scale-down max-h-full h-48" src="/images/HackDukeLogo.png" alt="Hack Duke"></img>
+      <p className="text-xl mb-8">Code for Good</p>
+      <p className="text-lg">02.07 - 02.09</p>
+      <div className="mt-8">
+        <button className="bg-purple-500 px-6 py-3 rounded-full text-white shadow-lg">Apply Now!</button>
+      </div>
     </div>
   )
 }

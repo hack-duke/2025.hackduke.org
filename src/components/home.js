@@ -8,7 +8,7 @@ export const Home = () => {
       <img src="/images/Blur1.png" alt="Description" className="z-100 absolute top-12 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
       <img 
         src="/images/CodeForGood.png" 
-        alt="Description" 
+        alt="Code For Good" 
         className="z-50 absolute-top-0 w-60" 
       />
       <img 

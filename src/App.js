@@ -15,11 +15,14 @@ function App () {
     <div className='font-sans'>
       <Navbar />
       <Home />
-      <About />
-      <Tracks />
-      <Schedule />
-      <FAQ />
-      <Sponsors />
+      <div className="gradient-container">
+        <About />
+        <Tracks />
+        <Schedule />
+        <FAQ />
+        <Sponsors />
+      </div>
+     
     </div>
   )
 }

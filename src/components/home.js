@@ -1,8 +1,10 @@
 export const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen bg-gradient-to-b from-home_bg1 to-home_bg2 text-white">
-      <img src="/images/Waves.png" alt="Description" class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
       <img className="flex object-scale-down max-h-full h-48" src="/images/HackDukeLogo.png" alt="Hack Duke"></img>
+      <img src="/images/Waves.png" alt="Description" class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
+      <img src="/images/Buoy.png" alt="Description" class="order-first absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
+      
       <p className="text-xl mb-8">Code for Good</p>
       <p className="text-lg">02.07 - 02.09</p>
       <div className="mt-8">

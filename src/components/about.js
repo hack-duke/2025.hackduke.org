@@ -1,7 +1,7 @@
 export const About = () => {
   return (
-    <section className='bg-secondary w-screen text-white'>
-      About Section
-    </section>
+    <div className='bg-gradient-to-b from-about_bg1 to-about_bg2 w-screen text-white h-64'>
+      <p>d</p>
+    </div>
   )
 }

@@ -1,7 +1,7 @@
 export const Sponsors = () => {
   return (
-    <section className='bg-accent1 w-screen text-white'>
-      Sponsors Section
-    </section>
+    <div className='bg-gradient-to-b from-sponsors_bg1 to-sponsors_bg2 w-screen text-white h-64'>
+      <p>d</p>
+    </div>
   )
 }

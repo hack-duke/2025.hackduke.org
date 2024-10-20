@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     colors: {
       home_bg1: '#000000',
-      home_bg2: '#00014C',
+      home_bg2: '#1f1d6a',
       about_bg1: '#152b84',
       about_bg2: '#252786',
       tracks_bg1:'#252786',

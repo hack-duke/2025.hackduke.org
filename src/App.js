@@ -14,15 +14,32 @@ function App () {
   return (
     <div className='font-sans'>
       <Navbar />
-      <Home />
-      <div className="gradient-container">
-        <About />
-        <Tracks />
-        <Schedule />
-        <FAQ />
-        <Sponsors />
+
+      <section id='home'>
+        <Home />
+      </section>
+
+      <div className='gradient-container'>
+        <section id='about'>
+          <About />
+        </section>
+
+        <section id='tracks'>
+          <Tracks />
+        </section>
+
+        <section id='schedule'>
+          <Schedule />
+        </section>
+
+        <section id='faq'>
+          <FAQ />
+        </section>
+
+        <section id='sponsors'>
+          <Sponsors />
+        </section>
       </div>
-     
     </div>
   )
 }

@@ -1,5 +1,7 @@
 export const FAQ = () => {
   return (
-    <section className='bg-background w-screen text-white'>FAQ Section</section>
+    <div className='h-screen w-full text-white h-64'>
+      <p>faq</p>
+    </div>
   )
 }

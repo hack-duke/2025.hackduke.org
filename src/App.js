@@ -15,29 +15,31 @@ function App () {
     <div className='font-sans'>
       <Navbar />
 
-      <section id="home">
+      <section id='home'>
         <Home />
       </section>
-      
-      <section id="about">
-        <About />
-      </section>
-      
-      <section id="tracks">
-        <Tracks />
-      </section>
-      
-      <section id="schedule">
-        <Schedule />
-      </section>
-      
-      <section id="faq">
-        <FAQ />
-      </section>
-      
-      <section id="sponsors">
-        <Sponsors />
-      </section>
+
+      <div className='gradient-container'>
+        <section id='about'>
+          <About />
+        </section>
+
+        <section id='tracks'>
+          <Tracks />
+        </section>
+
+        <section id='schedule'>
+          <Schedule />
+        </section>
+
+        <section id='faq'>
+          <FAQ />
+        </section>
+
+        <section id='sponsors'>
+          <Sponsors />
+        </section>
+      </div>
     </div>
   )
 }

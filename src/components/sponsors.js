@@ -1,7 +1,7 @@
 export const Sponsors = () => {
   return (
-    <section className='bg-accent1 w-screen text-white'>
-      Sponsors Section
-    </section>
+    <div className='h-screen min-h-full w-full text-white h-64'>
+      <p>sponsors</p>
+    </div>
   )
 }

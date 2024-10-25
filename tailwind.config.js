@@ -19,6 +19,7 @@ module.exports = {
       background: '#193D91',
       white: '#FFF',
       black: '#170738',
+      navbar: '#010104',
 
     },
     extend: {},

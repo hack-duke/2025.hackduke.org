@@ -89,18 +89,19 @@
   position: absolute;
   max-height: 200%;
   max-width: 200%;
-  animation: tilt 9s infinite alternate ease-in-out; /* Animation name, duration, repeat, and easing */
+  transform-origin: 85% 90%; /* 100px from left, 50px from top */
+  right: 10px;
+  top: -550px;
+  animation-delay: 1s;
+  animation: tilt 5s infinite alternate ease-in-out; /* Animation name, duration, repeat, and easing */
 }
 
 @keyframes tilt {
   0% {
-      transform: rotate(0deg);
-  }
-  50% {
-      transform: rotate(10deg); /* Tilt to the right */
+      transform: rotate(10deg); /* Left */
   }
   100% {
-      transform: rotate(-10deg); /* Tilt to the left */
+      transform: rotate(-20deg); /* Tilt to the left */
   }
 }
 

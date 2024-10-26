@@ -16,6 +16,11 @@ export const About = () => {
         style={{ transform: 'translateY(200px)' }}
       />
 
+      <img src="/images/AboutLighting.png"
+        alt='lighting for the about section'
+        className='absolute transform w-screen h-auto'
+        style={{ transform: 'translateY(-900px)' }}/>
+
       {/* Coral, Fish, and Decor */}
       <img src="/images/AboutRedCoral.png" alt="Red Coral decoration" 
         className='absolute left-0 w-auto h-[450px] z-0'
@@ -28,10 +33,14 @@ export const About = () => {
         className='absolute left-5 w-auto h-[150px] z-1'
         style={{ transform: 'translateY(450px)'}}/>
 
-      <img src="/images/AboutFish.png" alt="school of fish" className='absolute z-2 h-[250px]'
+      <img src="/images/AboutFish.png" alt="school of fish on the left" className='absolute z-2 h-[250px]'
         style={{transform: 'translateX(200px)'}}/>
-      
 
+      <img src="/images/AboutFish.png" alt="school of fish on the right" className='absolute z-2 h-[200px]'
+        style={{transform: 'translateX(1150px) translateY(230px) rotate(-10deg)'}}/>
+      
+      <img src="/images/AboutBlueSparkleOverlay.png" className='absolute z-2 h-[250px] w-screen h-auto'
+        alt='blue sparkles'/>
         {/* Tickets */}
         <div className="absolute w-auto h-[180px]" style={{ transform: 'translateX(270px) translateY(340px)' }}>
           <img src="/images/AboutTicket.png" alt="Left ticket that says 230+ hackers" 

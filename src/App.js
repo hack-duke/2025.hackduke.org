@@ -6,6 +6,7 @@ import { Tracks } from './components/tracks'
 import { Schedule } from './components/schedule'
 import { FAQ } from './components/faq'
 import { Sponsors } from './components/sponsors'
+import { Footer } from './components/footer'
 // TODO: Add the navbar
 // TODO: Add the different sections (About, Tracks, etc.)
 // TODO: Add the background image for each section
@@ -38,6 +39,10 @@ function App () {
 
         <section id='sponsors'>
           <Sponsors />
+        </section>
+
+        <section id='footer'>
+          <Footer />
         </section>
       </div>
     </div>

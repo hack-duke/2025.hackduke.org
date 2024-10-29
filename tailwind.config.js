@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       home_bg1: '#000000',
       home_bg2: '#1f1d6a',
+      "collection-1-color": "var(--collection-1-color)",
       about_bg1: '#152b84',
       about_bg2: '#252786',
       tracks_bg1:'#252786',

@@ -1,7 +1,7 @@
 export const Footer = () => {
     return (
         <div className='relative w-full text-white'>
-            <p className='absolute z-100 bottom-[5rem]'>Made with 🩷 by the HackDuke team</p>
+            <p className='absolute z-50 bottom-[1rem] text-center'>Made with 🩷 by the HackDuke team</p>
             <img 
             src="/images/AnglerFish.png" 
             className='absolute z-50 h-auto w-[43rem] bottom-[15rem] right-[5rem]' 

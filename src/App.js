@@ -6,9 +6,9 @@ import { Tracks } from './components/tracks'
 import { Schedule } from './components/schedule'
 import { FAQ } from './components/faq'
 import { Sponsors } from './components/sponsors'
+import { Footer } from './components/footer'
 import { Speaker } from './components/speaker'
-
-function App() {
+function App () {
   return (
     <div className="font-sans">
       <Navbar />
@@ -41,9 +41,14 @@ function App() {
         <section id="sponsors">
           <Sponsors />
         </section>
+
+        <section id='footer'>
+          <Footer />
+        </section>
       </div>
     </div>
   );
 }
 
 export default App;
+

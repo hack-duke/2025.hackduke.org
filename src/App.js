@@ -7,38 +7,37 @@ import { Schedule } from './components/schedule'
 import { FAQ } from './components/faq'
 import { Sponsors } from './components/sponsors'
 import { Footer } from './components/footer'
-import { Speaker } from './components/speaker'
+// TODO: Add the navbar
+// TODO: Add the different sections (About, Tracks, etc.)
+// TODO: Add the background image for each section
+// (look at how https://www.treehacks.com structures their HTML)
 function App () {
   return (
-    <div className="font-sans">
+    <div className='font-sans'>
       <Navbar />
 
-      <section id="home">
+      <section id='home'>
         <Home />
       </section>
 
-      <div className="gradient-container">
-        <section id="about">
+      <div className='gradient-container'>
+        <section id='about'>
           <About />
         </section>
 
-        <section id="tracks">
+        <section id='tracks'>
           <Tracks />
         </section>
 
-        <section id="speaker">
-          <Speaker />
-        </section>
-
-        <section id="schedule">
+        <section id='schedule'>
           <Schedule />
         </section>
 
-        <section id="faq">
+        <section id='faq'>
           <FAQ />
         </section>
 
-        <section id="sponsors">
+        <section id='sponsors'>
           <Sponsors />
         </section>
 
@@ -47,8 +46,7 @@ function App () {
         </section>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
-
+export default App

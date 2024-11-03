@@ -7,7 +7,7 @@ export const Navbar = () => {
   }
 
   return (
-    <nav className='w-screen text-2xl text-white bg-background p-4'>
+    <nav className='w-screen text-2xl text-white bg-navbar p-4'>
       <ul className='flex justify-end space-x-8 pr-8'>
         <li onClick={() => scrollToSection('home')}>
           <button>Home</button>

@@ -69,6 +69,7 @@ text-align: right;
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -76,6 +77,27 @@ text-align: right;
 
 
 .gradient-container {
-  background: linear-gradient(180deg, #132b84, #6556b5, #2a2f8a, #320a60, #1a083b); /* Example gradient */
+  background: linear-gradient(180deg, #132b84, #6556b5, #2a2f8a, #320a60, #1a083b);
+  /* Example gradient */
   padding: 20px;
+}
+
+.custom-shell-bullet {
+  background-image: url('../public/images/ShellBullet.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1em;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  color: #D5CFFF;
+}
+
+.custom-shell-bullet-alt {
+  background-image: url('../public/images/ShellBulletAlt.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1em;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+  color: #8C81EF;
 }

@@ -2,45 +2,45 @@ export const Schedule = () => {
   return (
     <div className='h-screen text-white'>
       <img src="/images/ScheduleLeftSpeaker.png" alt="About Left Speaker" 
-        className='absolute left-5 w-auto h-[300px] z-1'
-        style={{ transform: 'translateY(390px)'}}/>
+        className='absolute left-5 w-auto h-[18.75rem] z-1'
+        style={{ transform: 'translateY(24.375rem)'}}/>
       <img src="/images/ScheduleYellowCoral.png" alt="Yellow Coral"
-        className='absolute left-5 w-auto h-[300px] z-1'
-        style={{ transform: 'translateY(450px)'}}/>
+        className='absolute left-5 w-auto h-[18.75rem] z-1'
+        style={{ transform: 'translateY(28.125rem)'}}/>
       <img src="/images/ScheduleRightSpeaker.png" alt="About Left Speaker" 
-        className='absolute right-5 w-auto h-[300px] z-1'
-        style={{ transform: 'translateY(390px)'}}/>
-
+        className='absolute right-5 w-auto h-[18.75rem] z-1'
+        style={{ transform: 'translateY(24.375rem)'}}/>
+ 
       {/* Music Notes near left speaker */}
       <img src="/images/MusicNote.png" alt="Music Note 1" 
-        className='absolute left-[200px] w-auto h-[50px] z-1'
-        style={{ transform: 'translateY(300px)'}}/>
+        className='absolute left-[12.5rem] w-auto h-[3.125rem] z-1'
+        style={{ transform: 'translateY(18.75rem)'}}/>
       <img src="/images/MusicNote.png" alt="Music Note 2" 
-        className='absolute left-[240px] w-auto h-[50px] z-1'
-        style={{ transform: 'translateY(400px)'}}/>
+        className='absolute left-[15rem] w-auto h-[3.125rem] z-1'
+        style={{ transform: 'translateY(25rem)'}}/>
       <img src="/images/MusicNote.png" alt="Music Note 3" 
-        className='absolute left-[230px] w-auto h-[50px] z-1'
-        style={{ transform: 'translateY(180px)'}}/>
+        className='absolute left-[14.375rem] w-auto h-[3.125rem] z-1'
+        style={{ transform: 'translateY(11.25rem)'}}/>
       <img src="/images/MusicNote.png" alt="Music Note 4" 
-        className='absolute left-[325px] w-auto h-[50px] z-1'
-        style={{ transform: 'translateY(100px)'}}/>
-
+        className='absolute left-[20.3125rem] w-auto h-[3.125rem] z-1'
+        style={{ transform: 'translateY(6.25rem)'}}/>
+ 
       {/* Music Notes near right speaker */}
       <img src="/images/MusicNote.png" alt="Music Note 1" 
-        className='absolute right-[200px] w-auto h-[50px] z-1'
-        style={{ transform: 'translateY(300px)'}}/>
+        className='absolute right-[12.5rem] w-auto h-[3.125rem] z-1'
+        style={{ transform: 'translateY(18.75rem)'}}/>
       <img src="/images/MusicNote.png" alt="Music Note 2" 
-        className='absolute right-[350px] w-auto h-[50px] z-1'
-        style={{ transform: 'translateY(400px)'}}/>
+        className='absolute right-[21.875rem] w-auto h-[3.125rem] z-1'
+        style={{ transform: 'translateY(25rem)'}}/>
       <img src="/images/MusicNote.png" alt="Music Note 3" 
-        className='absolute right-[325px] w-auto h-[50px] z-1'
-        style={{ transform: 'translateY(550px)'}}/>
-
+        className='absolute right-[20.3125rem] w-auto h-[3.125rem] z-1'
+        style={{ transform: 'translateY(34.375rem)'}}/>
+ 
       {/*Schedule header*/}
-      <div className='z-1 w-[400px] mx-auto flex flex-col items-center'>
-        <img src="/images/ScheduleHeader.png" alt="About" className='h-[110px]'/>
+      <div className='z-1 w-[25rem] mx-auto flex flex-col items-center'>
+        <img src="/images/ScheduleHeader.png" alt="About" className='h-[6.875rem]'/>
       </div>
-
+ 
       {/*Schedule content*/}
       <div className='max-w-6xl mx-auto mt-12 px-4'>
         <div className='grid grid-cols-2 gap-32'>
@@ -78,7 +78,7 @@ export const Schedule = () => {
               </div>
             </div>
           </div>
-
+ 
           {/* Day 2 */}
           <div>
             <h2 className='text-4xl mb-8 text-center tracking-wide text-[#D5CFFFF2]'>10/23/24</h2>
@@ -117,4 +117,4 @@ export const Schedule = () => {
       </div>
     </div>
   )
-}
+ }

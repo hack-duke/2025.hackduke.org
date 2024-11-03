@@ -1,6 +1,6 @@
 export const Speaker = () => {
   return (
-    <div className="h-screen flex flex-col w-full text-white">
+    <div className="h-screen flex flex-col w-full text-white speaker-body">
 
       <h1 className="speaker-title" style={{ transform: 'translate(65vw, -5vh)', height: '20vw' }}>Speaker</h1>
       <p className='speaker-text' style={{ transform: 'translate(60vw, -20vh)', width: '30vw' }}>Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.

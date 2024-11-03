@@ -36,6 +36,10 @@ text-align: right;
 
 }
 
+.speaker-body {
+  overflow-x: hidden;
+}
+
 
 .separator {
   width: 100%;

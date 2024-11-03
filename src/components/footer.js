@@ -4,12 +4,12 @@ export const Footer = () => {
             <p className='absolute z-50 bottom-[1rem] text-center'>Made with 🩷 by the HackDuke team</p>
             <img 
             src="/images/AnglerFish.png" 
-            className='absolute z-50 w-[30rem] md:w-[43rem] bottom-[15rem] right-[0rem] md:right-[5rem]' 
+            className='absolute z-50 w-[25rem] md:w-[43rem] bottom-[9rem] md:bottom-[15rem] right-[0rem] md:right-[5rem]' 
             alt="Angler Fish"/>
 
             <img 
             src="/images/Spaceship.png" 
-            className='absolute z-30 h-auto w-[25rem] bottom-[1rem] right-[-2rem] md:right-[5rem] md:w-[33rem]' 
+            className='absolute z-30 h-auto w-[20rem] bottom-[-1rem] md:bottom-[1rem] right-[-2rem] md:right-[5rem] md:w-[33rem]' 
             alt="Spaceship"/>
 
             <img 
@@ -24,12 +24,12 @@ export const Footer = () => {
 
             <img 
             src="/images/Blue Coral.png" 
-            className='absolute z-40 h-auto w-[20rem] bottom-[20rem] left-[-1rem] opacity-50' 
+            className='absolute z-40 h-auto w-[15rem] md:w-[20rem] bottom-[15rem] left-[-3rem] md:bottom-[20rem] md:left-[-1rem] opacity-50' 
             alt="Blue Coral"/>
 
             <img 
             src="/images/Purple Coral.png" 
-            className='absolute z-40 h-auto w-[15rem] bottom-[20rem] left-[3rem] opacity-50' 
+            className='absolute z-40 h-auto w-[12rem] md:w-[20rem] bottom-[15rem] left-[-3rem] md:bottom-[20rem] md:left-[-1rem] opacity-50' 
             alt="Purple Coral"/>
 
             <img 
@@ -44,7 +44,7 @@ export const Footer = () => {
 
             <img 
             src="/images/Crab.png" 
-            className='absolute z-30 h-auto w-[15rem] bottom-[10rem] left-[3.23rem] opacity-30' 
+            className='absolute z-30 h-auto w-[11rem] md:w-[15rem] bottom-[4rem] md:bottom-[10rem] left-[-1rem] md:left-[3.23rem] opacity-30' 
             alt="Crab Cliff"/>  
             
         </div>

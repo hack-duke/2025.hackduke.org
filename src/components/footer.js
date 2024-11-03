@@ -4,12 +4,12 @@ export const Footer = () => {
             <p className='absolute z-50 bottom-[1rem] text-center'>Made with 🩷 by the HackDuke team</p>
             <img 
             src="/images/AnglerFish.png" 
-            className='absolute z-50 h-auto w-[43rem] bottom-[15rem] right-[5rem]' 
+            className='absolute z-50 w-[30rem] md:w-[43rem] bottom-[15rem] right-[0rem] md:right-[5rem]' 
             alt="Angler Fish"/>
 
             <img 
             src="/images/Spaceship.png" 
-            className='absolute z-30 h-auto w-[33rem] bottom-[1rem] right-[5rem]' 
+            className='absolute z-30 h-auto w-[25rem] bottom-[1rem] right-[-2rem] md:right-[5rem] md:w-[33rem]' 
             alt="Spaceship"/>
 
             <img 

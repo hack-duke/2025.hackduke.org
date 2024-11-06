@@ -7,6 +7,7 @@ import { Schedule } from './components/schedule'
 import { FAQ } from './components/faq'
 import { Sponsors } from './components/sponsors'
 import { Footer } from './components/footer'
+import { Speaker } from './components/speaker'
 // TODO: Add the navbar
 // TODO: Add the different sections (About, Tracks, etc.)
 // TODO: Add the background image for each section
@@ -31,6 +32,10 @@ function App () {
 
         <section id='schedule'>
           <Schedule />
+        </section>
+
+        <section id='speaker'>
+          <Speaker />
         </section>
 
         <section id='faq'>

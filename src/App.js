@@ -8,18 +8,24 @@ import { FAQ } from './components/faq'
 import { Sponsors } from './components/sponsors'
 import { Footer } from './components/footer'
 import { Speaker } from './components/speaker'
+import { Backdrop } from './components/backdrop'
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+
 // TODO: Add the navbar
 // TODO: Add the different sections (About, Tracks, etc.)
 // TODO: Add the background image for each section
 // (look at how https://www.treehacks.com structures their HTML)
 function App () {
   return (
-    <div className='font-sans'>
+    <ParallaxProvider>
       <Navbar />
 
       <section id='home'>
         <Home />
       </section>
+
+      <Backdrop/>
 
       <div className='gradient-container'>
         <section id='about'>
@@ -50,7 +56,7 @@ function App () {
           <Footer />
         </section>
       </div>
-    </div>
+    </ParallaxProvider>
   )
 }
 

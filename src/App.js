@@ -21,7 +21,7 @@ function App () {
     <ParallaxProvider>
       <Navbar />
 
-      <section id='home'>
+      <section id='home' className='relative'>
         <Home />
       </section>
 

@@ -53,7 +53,7 @@ export const About = () => {
         src="/images/AboutFish.png"
         alt="school of fish on the right"
         className="absolute h-[25vw] max-w-none z-2 transform right-[3rem]"
-        style={{ transform: 'rotate(-10deg)' }}
+        style={{ transform: 'rotate(-10deg) translateY(13rem)' }}
       />
 
       <img

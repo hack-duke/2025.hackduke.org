@@ -4,7 +4,7 @@ import Accordion from './accordion'
 export const FAQ = () => {
   return (
     <div className='h-[90vh] w-full text-white h-64 relative'>
-      <h1 className='text-8xl font-bold blur-[0.05rem] text-center w-full'>
+      <h1 className='text-8xl font-bold section-title text-center w-full'>
         FAQ
       </h1>
       {/* This container hosts the jellyfish images */}
@@ -45,7 +45,7 @@ export const FAQ = () => {
 
 export const ListTitle = ({ title }) => {
   return (
-    <h2 className='left-[40%] mb-2 text-[#D4CDF4] text-3xl font-bold blur-[0.05rem] brightness-125'>
+    <h2 className='text-center mb-2 text-[#D4CDF4] text-3xl font-bold blur-[0.05rem] brightness-125'>
       {title}
     </h2>
   )

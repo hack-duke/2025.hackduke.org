@@ -102,3 +102,8 @@
   /* margin-bottom: 0.5em; */
   color: #8C81EF;
 }
+
+.section-title {
+  font-size: 6rem;
+  text-shadow: #FFF 0 0 10px;
+}

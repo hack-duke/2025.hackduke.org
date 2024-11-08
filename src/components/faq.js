@@ -8,12 +8,12 @@ export const FAQ = () => {
       </h1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
-      <div className='absolute grid grid-cols-[60%,40%] mx-auto left-[20%] top-32 z-10 w-[50%] h-[26rem]'>
-        <div className='pt-16'>
+      <div className='absolute grid grid-cols-1 mx-auto left-[20%] top-32 z-10 w-[50%] h-[26rem] text-[1.7vw] sm:grid-cols-[60%,40%]'>
+        <div className='pt-[3vw]'>
           <ListTitle title='General' />
           <AlternatingList items={GENERAL_QUESTIONS} />
         </div>
-        <div className='pt-16 flex align-center flex-col'>
+        <div className='pt-[3vw] flex align-center flex-col'>
           <ListTitle title='Logistics' />
           <AlternatingList items={LOGISTICS_QUESTIONS} />
         </div>

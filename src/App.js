@@ -17,7 +17,7 @@ function App () {
     <div className='font-sans'>
       <Navbar />
 
-      <section id='home'>
+      <section id='home' className='relative'>
         <Home />
       </section>
 

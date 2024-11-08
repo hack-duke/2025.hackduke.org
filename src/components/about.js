@@ -1,21 +1,6 @@
 export const About = () => {
   return (
-    <div className="w-[100vw]">
-      {/* The Top Walls */}
-      <img src="/images/WallsBack.png" alt="Background Wall" className="absolute left-0 right-0 w-screen h-auto z-0" />
-      <img
-        src="/images/RightCliffFrontTop.png"
-        alt="right front top cliff"
-        className="absolute right-0 w-[20vw] max-w-none h-auto z-0 transform"
-        style={{ transform: 'translateY(10vw)' }}
-      />
-      <img
-        src="/images/LeftCliffFrontTop.png"
-        alt="left front top cliff"
-        className="absolute left-0 w-[20vw] max-w-none h-auto z-0 transform"
-        style={{ transform: 'translateY(10vw)' }}
-      />
-
+    <div className="h-screen">
       <img
         src="/images/AboutLighting.png"
         alt="lighting for the about section"
@@ -23,26 +8,14 @@ export const About = () => {
         style={{ transform: 'translateY(-10vw)' }}
       />
 
-      {/* Coral, Fish, and Decor */}
       <img
-        src="/images/AboutRedCoral.png"
-        alt="Red Coral decoration"
-        className="absolute left-0 w-[25vw] max-w-none h-auto z-0"
-        style={{ transform: 'translateY(20vw) translateX(2vw)'  }}
-      />
-      <img
-        src="/images/AboutLeftSpeaker.png"
-        alt="About Left Speaker"
-        className="absolute left-2 w-[10vw] max-w-none h-auto z-1"
-        style={{ transform: 'translateY(32vw) translateX(5vw)' }}
-      />
-      <img
-        src="/images/AboutYellowCoral.png"
-        alt="Yellow Coral"
-        className="absolute left-5 w-[10vw] max-w-none h-auto z-1"
-        style={{ transform: 'translateY(35vw) translateX(3vw)' }}
+        src="/images/AboutBlueSparkleOverlay.png"
+        className="absolute w-full h-auto z-2"
+        alt="blue sparkles"
       />
 
+      {/* Coral, Fish, and Decor */}
+  
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the left"
@@ -57,14 +30,8 @@ export const About = () => {
         style={{ transform: 'translateX(80vw) translateY(25vw) rotate(-10deg)' }}
       />
 
-      <img
-        src="/images/AboutBlueSparkleOverlay.png"
-        className="absolute w-full h-auto z-2"
-        alt="blue sparkles"
-      />
-
       {/* Tickets with Separate Texts */}
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(17vw) translateY(35vw) rotate(-3deg)' }}>
+      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(17vw) translateY(35vw) rotate(-3deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
@@ -76,7 +43,7 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(40vw) translateY(20vw) rotate(20deg)' }}>
+      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(40vw) translateY(20vw) rotate(20deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
@@ -88,7 +55,7 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(60vw) translateY(40vw) rotate(10deg)' }}>
+      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(60vw) translateY(40vw) rotate(10deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
@@ -100,7 +67,7 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(35vw) translateY(50vw) rotate(-20deg)' }}>
+      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(35vw) translateY(50vw) rotate(-20deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>

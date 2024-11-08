@@ -1,15 +1,6 @@
 export const Schedule = () => {
   return (
     <div className='h-screen text-white'>
-      <img src="/images/ScheduleLeftSpeaker.png" alt="About Left Speaker" 
-        className='absolute left-5 w-auto h-[18.75rem] z-1'
-        style={{ transform: 'translateY(24.375rem)'}}/>
-      <img src="/images/ScheduleYellowCoral.png" alt="Yellow Coral"
-        className='absolute left-5 w-auto h-[18.75rem] z-1'
-        style={{ transform: 'translateY(28.125rem)'}}/>
-      <img src="/images/ScheduleRightSpeaker.png" alt="About Left Speaker" 
-        className='absolute right-5 w-auto h-[18.75rem] z-1'
-        style={{ transform: 'translateY(24.375rem)'}}/>
  
       {/* Music Notes near left speaker */}
       <img src="/images/MusicNote.png" alt="Music Note 1" 

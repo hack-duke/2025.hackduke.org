@@ -19,7 +19,7 @@ export const About = () => {
       <img
         src="/images/AboutLighting.png"
         alt="lighting for the about section"
-        className="absolute left-0 w-full h-auto transform z-0"
+        className="absolute left-0 w-full h-auto transform z-0 right-[1rem]"
         style={{ transform: 'translateY(-10vw)' }}
       />
 
@@ -46,20 +46,19 @@ export const About = () => {
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the left"
-        className="absolute h-[20vw] max-w-none z-2"
-        style={{ transform: 'translateX(8vw) translateY(7vw)' }}
+        className="absolute h-[20vw] max-w-none z-2 left-[2rem]"
       />
 
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the right"
-        className="absolute h-[25vw] max-w-none z-2 transform"
-        style={{ transform: 'translateX(80vw) translateY(25vw) rotate(-10deg)' }}
+        className="absolute h-[25vw] max-w-none z-2 transform right-[3rem]"
+        style={{ transform: 'rotate(-10deg)' }}
       />
 
       <img
         src="/images/AboutBlueSparkleOverlay.png"
-        className="absolute w-full h-auto z-2"
+        className="absolute w-full h-auto z-2 right-[2rem]"
         alt="blue sparkles"
       />
 

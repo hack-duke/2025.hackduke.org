@@ -62,14 +62,14 @@
 
 }
 .wave1 {
-  animation: animate 10s linear infinite;
-  animation-delay: 0s;
+  animation: animate 11s linear infinite;
+  animation-delay: -3.9s;
   bottom:0;
   z-index: 0;
 }
 .wave2 {
   animation: animate 7s linear infinite;
-  animation-delay: 0.1s;
+  animation-delay: -3.8s;
   bottom:0;
   z-index: 0;
   opacity: 0.5;
@@ -77,10 +77,10 @@
 }
 @keyframes animate {
   0% {
-    background-position-x: 0;
+    background-position-x: 1000px;
   }
   100% {
-    background-position-x: 1000px;
+    background-position-x: 0px;
   }
   
 }
@@ -89,19 +89,20 @@
   position: absolute;
   max-height: 200%;
   max-width: 200%;
-  transform-origin: 85% 90%; /* 100px from left, 50px from top */
+  transform-origin: 75% 95%; /* 100px from left, 50px from top */
   right: 10px;
-  top: -550px;
-  animation-delay: 1s;
-  animation: tilt 5s infinite alternate ease-in-out; /* Animation name, duration, repeat, and easing */
+  bottom: -8rem;
+  animation-delay: -0.5s;
+  animation: tilt 5.45s infinite alternate ease-in-out; /* Animation name, duration, repeat, and easing */
 }
 
 @keyframes tilt {
   0% {
-      transform: rotate(10deg); /* Left */
+      transform: rotate(10deg) translateY(-11vh); /* Left */
   }
   100% {
-      transform: rotate(-20deg); /* Tilt to the left */
+      transform: rotate(-20deg) translateY(1vh);
   }
 }
+
 

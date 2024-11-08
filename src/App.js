@@ -36,12 +36,12 @@ function App () {
           <Tracks />
         </section>
 
-        <section id='schedule'>
-          <Schedule />
-        </section>
-
         <section id='speaker'>
           <Speaker />
+        </section>
+
+        <section id='schedule'>
+          <Schedule />
         </section>
 
         <section id='faq'>

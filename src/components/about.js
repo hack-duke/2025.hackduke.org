@@ -62,8 +62,8 @@ export const About = () => {
         alt="blue sparkles"
       />
 
-      {/* Tickets with Separate Texts */}
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(17vw) translateY(35vw) rotate(-3deg)' }}>
+      {/* Tickets */}
+      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(17vw) translateY(26vw) rotate(-3deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
@@ -75,7 +75,7 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(40vw) translateY(20vw) rotate(20deg)' }}>
+      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(40vw) translateY(15vw) rotate(20deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
@@ -87,7 +87,7 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(60vw) translateY(40vw) rotate(10deg)' }}>
+      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(60vw) translateY(28vw) rotate(10deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
@@ -99,7 +99,7 @@ export const About = () => {
         </p>
       </div>
 
-      <div className="absolute w-[28vw] max-w-none h-auto" style={{ transform: 'translateX(35vw) translateY(50vw) rotate(-20deg)' }}>
+      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(35vw) translateY(38vw) rotate(-20deg)' }}>
         <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
         <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
           style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
@@ -113,14 +113,14 @@ export const About = () => {
 
       {/* About header and description */}
       <div className="absolute z-1 left-[58vw] flex flex-col items-center" style={{ width: '40vw'}}>
-        <img src="/images/AboutHeader.png" alt="About" className="h-[10vw] max-w-full" />
+        <img src="/images/AboutHeader.png" alt="About" className="h-[6vw] max-w-full" />
         <p
           className=" text-about_ticket_text font-urbanist font-bold text-center flex items-center justify-center"
           style={{
-            width: '100%',
+            width: '90%',
             height: '100%',
-            fontSize: '2vw', // Adjust this value based on how large you want the text
-            lineHeight: '3vw', // Adjust line height as needed
+            fontSize: '1.7vw', // Adjust this value based on how large you want the text
+            lineHeight: '2vw', // Adjust line height as needed
           }}
         >
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students

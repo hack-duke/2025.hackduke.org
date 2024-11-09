@@ -25,43 +25,6 @@ export const Speaker = () => {
         style={{ transform: 'translate(-2vw, 2vh)', height: '15vw' }}
       />
 
-
-      <img
-        src="/images/music.svg"
-        alt="note"
-        className="absolute z-2"
-        style={{ transform: 'translate(48vw,2vh)', height: '5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(35vw,8vh)', height: '2.5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(13vw,25vh)', height: '2.5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(8vw,75vh)', height: '2.5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(64vw,85vh)', height: '2.5vw' }}
-      />
-
-
     </div>
   );
 };

@@ -19,11 +19,11 @@ export const Navbar = () => {
         <li onClick={() => scrollToSection('tracks')}>
           <button>Tracks</button>
         </li>
-        <li onClick={() => scrollToSection('schedule')}>
-          <button>Schedule</button>
-        </li>
         <li onClick={() => scrollToSection('speaker')}>
           <button>Speaker</button>
+        </li>
+        <li onClick={() => scrollToSection('schedule')}>
+          <button>Schedule</button>
         </li>
         <li onClick={() => scrollToSection('faq')}>
           <button>FAQ</button>

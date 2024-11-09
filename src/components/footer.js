@@ -5,6 +5,18 @@ export const Footer = () => {
         <div className='relative w-full text-white'>
             <Parallax speed={5}>
                 <img 
+                    src="/images/Background Left Cliff.png" 
+                    className='absolute z-0 h-auto w-[50rem] bottom-[0rem] left-[-2rem]' 
+                    alt="Background Left Cliff"/>
+                <img 
+                    src="/images/Background Right Cliff.png" 
+                    className='absolute z-0 h-auto w-[50rem] bottom-[0rem] right-[-2rem]' 
+                    alt="Background Left Cliff"/>
+
+            </Parallax>
+
+            <Parallax speed={10}>
+                <img 
                 src="/images/Coral Cliff.png" 
                 className='absolute z-10 h-auto w-[35rem] bottom-[0rem] left-[-1.23rem]' 
                 alt="Coral Cliff"/>
@@ -20,7 +32,7 @@ export const Footer = () => {
                 alt="Purple Coral"/>
             </Parallax>
 
-            <Parallax speed={10}>
+            <Parallax speed={15}>
                 <img 
                 src="/images/Crab Cliff.png" 
                 className='absolute z-10 h-auto w-[50rem] bottom-[-3rem] left-[-2rem]' 
@@ -32,7 +44,7 @@ export const Footer = () => {
                 alt="Crab Cliff"/>  
             </Parallax>
 
-            <Parallax speed={15}>
+            <Parallax speed={20}>
                 <img 
                 src="/images/AnglerFish.png" 
                 className='absolute z-50 h-auto w-[43rem] bottom-[15rem] right-[5rem]' 

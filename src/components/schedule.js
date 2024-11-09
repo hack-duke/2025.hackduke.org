@@ -1,28 +1,6 @@
 export const Schedule = () => {
   return (
     <div className='h-screen text-white'>
- 
-      {/* Music Notes near left speaker */}
-      <img src="/images/MusicNote.png" alt="Music Note 1" 
-        className='absolute left-[8rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(18.75rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 2" 
-        className='absolute left-[10rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(22rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 3" 
-        className='absolute left-[12rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(16rem)'}}/>
-
-      {/* Music Notes near right speaker */}
-      <img src="/images/MusicNote.png" alt="Music Note 1" 
-        className='absolute right-[12rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(18.75rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 2" 
-        className='absolute right-[15rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(22rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 3" 
-        className='absolute right-[17rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(16rem)'}}/>
 
       <div className='z-10 w-[25rem] mx-auto flex flex-col items-center mb-8'>
         <img src="/images/ScheduleHeader.png" alt="About" className='h-[5rem]'/>

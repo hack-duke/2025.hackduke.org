@@ -1,20 +1,22 @@
 export const Speaker = () => {
   return (
-    <div className="h-screen flex flex-col w-full text-white speaker-body">
+    <div className="h-screen">
+      <div className="absolute z-1" style={{ transform: 'translate(50vw,20vh)', width: '30vw' }}>
+        <h1 className='text-white text-8xl font-bold text-center'>
+          Speaker
+        </h1>
+        <p
+          className="mt-10 text-about_ticket_text font-urbanist font-semibold text-center text-2xl"
+        >
+          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
+          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
+          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
+        </p>
+      </div>
 
-      <h1 className="speaker-title" style={{ transform: 'translate(65vw, -5vh)', height: '20vw' }}>Speaker</h1>
-      <p className='speaker-text' style={{ transform: 'translate(60vw, -20vh)', width: '30vw' }}>Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-        Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-        Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-
-      </p>
-
-      <img
-        src="/images/speakershark.png"
-        alt="rishi shark"
-        className="absolute z-2"
-        style={{ transform: 'translate(-2vw, 10vh)', height: '40vw' }}
-      />
+      <div className="absolute" style={{ transform: 'translate(0vw,0vh)', width: '50vw'}} >
+        <SpeakerShark />
+      </div>
 
       <img
         src="/images/fishy.png"
@@ -23,12 +25,6 @@ export const Speaker = () => {
         style={{ transform: 'translate(-2vw, 2vh)', height: '15vw' }}
       />
 
-      <img
-        src="/images/music.svg"
-        alt="note"
-        className="absolute z-2"
-        style={{ transform: 'translate(16vw, 25vh)', height: '5vw' }}
-      />
 
       <img
         src="/images/music.svg"
@@ -69,3 +65,39 @@ export const Speaker = () => {
     </div>
   );
 };
+
+export const SpeakerShark = () => {
+  return (
+    <div style={{ position: 'relative', width: '100%' }}>
+    <img
+      src="/images/SpeakerSharkFrame.png"
+      alt="Speaker Shark Frame"
+      style={{ width: '100%' }}
+    />
+    <img
+      src="/images/SpeakerSharkTeethOverlay.png"
+      alt="Speaker Shark Teeth"
+      style={{
+        position: 'absolute',
+        top: '39%',
+        left: '48%',
+        transform: 'translateX(-50%)',
+        width: '49%',
+        zIndex: 10,
+      }}
+    />
+    <img
+      src="/images/Speaker.png"
+      alt="Speaker"
+      style={{
+        position: 'absolute',
+        top: '43%',
+        left: '48%',
+        transform: 'translateX(-50%)',
+        width: '43%',
+        borderRadius: '50%',
+      }}
+    />
+  </div>
+  );
+}

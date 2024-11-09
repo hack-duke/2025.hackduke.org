@@ -8,12 +8,6 @@ export const About = () => {
         style={{ transform: 'translateY(-10vw)' }}
       />
 
-      <img
-        src="/images/AboutBlueSparkleOverlay.png"
-        className="absolute w-full h-auto z-2"
-        alt="blue sparkles"
-      />
-
       {/* Coral, Fish, and Decor */}
 
       <img
@@ -27,12 +21,6 @@ export const About = () => {
         alt="school of fish on the right"
         className="absolute h-[25vw] max-w-none z-2 transform right-[7rem]"
         style={{ transform: 'rotate(-10deg) translateY(13rem)' }}
-      />
-
-      <img
-        src="/images/AboutBlueSparkleOverlay.png"
-        className="absolute w-full h-auto z-2 right-[2rem]"
-        alt="blue sparkles"
       />
 
       {/* Tickets with Separate Texts */}

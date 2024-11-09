@@ -52,9 +52,9 @@ function App () {
           <Sponsors />
         </section>
 
-        <section id='footer'>
-          <Footer />
-        </section>
+        <div className='h-[50vh]'></div> {/* spacer */}
+        
+        <Footer />
       </div>
     </ParallaxProvider>
   )

@@ -43,7 +43,7 @@ export const About = () => {
           About
         </h1>
         <p
-          className=" text-about_ticket_text font-urbanist font-semibold text-center text-2xl"
+          className=" text-about_ticket_text font-urbanist font-semibold text-center text-[1.7vw]"
         >
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students
           to create meaningful solutions for social impact.

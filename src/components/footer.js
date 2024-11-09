@@ -12,7 +12,6 @@ export const Footer = () => {
                     src="/images/Background Right Cliff.png" 
                     className='absolute z-0 h-auto w-[50rem] bottom-[0rem] right-[-2rem]' 
                     alt="Background Left Cliff"/>
-
             </Parallax>
 
             <Parallax speed={10}>
@@ -47,12 +46,12 @@ export const Footer = () => {
             <Parallax speed={20}>
                 <img 
                 src="/images/AnglerFish.png" 
-                className='absolute z-50 h-auto w-[43rem] bottom-[15rem] right-[5rem]' 
+                className='absolute z-50 h-auto w-[43vw] bottom-[15vw] right-[5rem]' 
                 alt="Angler Fish"/>
 
                 <img 
                 src="/images/Spaceship.png" 
-                className='absolute z-30 h-auto w-[33rem] bottom-[0rem] right-[5rem]' 
+                className='absolute z-30 h-auto w-[33vw] bottom-[0vw] right-[5rem]' 
                 alt="Spaceship"/>
 
                 <img 
@@ -66,7 +65,7 @@ export const Footer = () => {
                 alt="Space Lighting"/>
             </Parallax>
 
-            <p className='absolute z-50 bottom-[0.5vw] left-1/2 -translate-x-1/2 text-center text-lg'>
+            <p className='absolute z-50 left-1/2 -translate-x-1/2 text-center text-[1.7vw] bottom-[-7rem]'>
                 Made with 🩷 by the HackDuke team
             </p>
         </div>

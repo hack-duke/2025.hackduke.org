@@ -2,8 +2,8 @@ import { GENERAL_QUESTIONS, LOGISTICS_QUESTIONS } from '../consts'
 
 export const FAQ = () => {
   return (
-    <div className='h-[85vh] w-full text-white h-64 relative'>
-      <h1 className='text-8xl font-bold blur-[0.05rem] text-center w-full'>
+    <div className='h-screen w-full text-white relative'>
+      <h1 className='absolute z-10 text-8xl font-bold blur-[0.05rem] text-center w-full'>
         FAQ
       </h1>
       {/* This container hosts the jellyfish images */}
@@ -21,10 +21,11 @@ export const FAQ = () => {
 
       <img
         src='/images/Ray.svg'
-        className='absolute right-52 w-[30%] bottom-4 z-1'
+        alt='Ray'
+        className='absolute z-10 right-52 w-[30%] bottom-4 z-1'
       ></img>
 
-      <MusicNotes />
+      {/*<MusicNotes />*/}
     </div>
   )
 }

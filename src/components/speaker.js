@@ -1,12 +1,12 @@
 export const Speaker = () => {
   return (
     <div className="h-screen">
-      <div className="absolute z-1" style={{ transform: 'translate(50vw,20vh)', width: '30vw' }}>
+      <div className="absolute z-1" style={{ transform: 'translate(45vw,20vh)', width: '30vw' }}>
         <h1 className='text-white text-8xl font-bold text-center'>
           Speaker
         </h1>
         <p
-          className="mt-10 text-about_ticket_text font-urbanist font-semibold text-center text-2xl"
+          className="mt-10 text-about_ticket_text font-urbanist font-semibold text-center text-[1.7vw]"
         >
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
@@ -14,7 +14,7 @@ export const Speaker = () => {
         </p>
       </div>
 
-      <div className="absolute" style={{ transform: 'translate(0vw,0vh)', width: '50vw'}} >
+      <div className="absolute" style={{ transform: 'translate(-5vw,0vh)', width: '50vw'}} >
         <SpeakerShark />
       </div>
 

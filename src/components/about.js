@@ -70,11 +70,11 @@ export const Ticket = ({ mainText, subText }) => {
     <div className="absolute w-[24vw] max-w-none h-auto">
       <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
       <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-        style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
+        style={{ transform: 'translateY(-1.25vw) translateX(-2vw) rotate(-3deg)' }}>
         {mainText}
       </p>
       <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-        style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
+        style={{ transform: 'translateY(1.25vw) translateX(-2vw) rotate(-3deg)' }}>
         {subText}
       </p>
     </div>

@@ -15,7 +15,7 @@ export const About = () => {
       />
 
       {/* Coral, Fish, and Decor */}
-  
+
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the left"
@@ -36,70 +36,47 @@ export const About = () => {
       />
 
       {/* Tickets with Separate Texts */}
-      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(17vw) translateY(35vw) rotate(-3deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          230+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          hackers
-        </p>
+      <div style={{ transform: 'translateX(17vw) translateY(25vw) rotate(-3deg)' }}>
+        <Ticket mainText="230+" subText="hackers" />
       </div>
-
-      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(40vw) translateY(20vw) rotate(20deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          100+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          projects
-        </p>
+      <div style={{ transform: 'translateX(40vw) translateY(30vw) rotate(20deg)' }}>
+        <Ticket mainText="100+" subText="projects" />
       </div>
-
-      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(60vw) translateY(40vw) rotate(10deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          50+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          mentors
-        </p>
+      <div style={{ transform: 'translateX(65vw) translateY(40vw) rotate(10deg)' }}>
+        <Ticket mainText="50+" subText="mentors" />
       </div>
-
-      <div className="absolute w-[24vw] max-w-none h-auto" style={{ transform: 'translateX(35vw) translateY(50vw) rotate(-20deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          10+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          sponsors
-        </p>
+      <div style={{ transform: 'translateX(35vw) translateY(27vw) rotate(-20deg)' }}>
+        <Ticket mainText="10+" subText="sponsors" />
       </div>
 
       {/* About header and description */}
-      <div className="absolute z-1 left-[58vw] flex flex-col items-center" style={{ width: '40vw'}}>
-        <img src="/images/AboutHeader.png" alt="About" className="h-[10vw] max-w-full" />
+      <div className="absolute z-1 right-[5vw] flex flex-col items-center mt-8" style={{ width: '30vw' }}>
+        <h1 className='text-white text-8xl font-bold text-center w-full'>
+          About
+        </h1>
         <p
-          className=" text-about_ticket_text font-urbanist font-bold text-center flex items-center justify-center"
-          style={{
-            width: '100%',
-            height: '100%',
-            fontSize: '2vw', // Adjust this value based on how large you want the text
-            lineHeight: '3vw', // Adjust line height as needed
-          }}
+          className=" text-about_ticket_text font-urbanist font-semibold text-center text-2xl"
         >
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students
           to create meaningful solutions for social impact.
         </p>
       </div>
+    </div>
+  );
+};
+
+export const Ticket = ({ mainText, subText }) => {
+  return (
+    <div className="absolute w-[24vw] max-w-none h-auto">
+      <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
+      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
+        style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
+        {mainText}
+      </p>
+      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
+        style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
+        {subText}
+      </p>
     </div>
   );
 };

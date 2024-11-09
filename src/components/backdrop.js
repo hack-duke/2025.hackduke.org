@@ -3,10 +3,10 @@ import { Parallax } from 'react-scroll-parallax';
 export const Backdrop = () => {
     return (
         <div className="relative top-0 left-0 w-screen">
-            <Parallax speed={-5}>
+            <Parallax speed={-15}>
                 <img src="/images/WallsBack.png" alt="Background Wall" className="absolute top-0 left-0 w-screen h-auto z-0" />
             </Parallax>
-            <Parallax speed={-15}>
+            <Parallax speed={-5}>
                 <img
                     src="/images/RightCliffFrontTop.png"
                     alt="right front top cliff"
@@ -38,16 +38,16 @@ export const Backdrop = () => {
                     style={{ transform: 'translateY(35vw) translateX(3vw)' }}
                 />
                 <img src="/images/ScheduleLeftSpeaker.png" alt="About Left Speaker"
-                    className='absolute left-5 w-auto h-[18.75rem] z-1'
-                    style={{ transform: 'translateY(200rem)' }} />
+                    className='absolute left-5 w-auto h-[18.75vw] z-1'
+                    style={{ transform: 'translateY(190vw)' }} />
 
                 <img src="/images/ScheduleYellowCoral.png" alt="Yellow Coral"
-                    className='absolute left-0 w-auto h-[18.75rem] z-1'
-                    style={{ transform: 'translateY(205rem)' }} />
+                    className='absolute left-0 w-auto h-[18.75vw] z-1'
+                    style={{ transform: 'translateY(195vw)' }} />
 
                 <img src="/images/ScheduleRightSpeaker.png" alt="About Left Speaker"
-                    className='absolute right-5 w-auto h-[18.75rem] z-1'
-                    style={{ transform: 'translateY(160rem)' }} />
+                    className='absolute right-5 w-auto h-[18.75vw] z-1'
+                    style={{ transform: 'translateY(170vw)' }} />
             </Parallax>
         </div>
     );

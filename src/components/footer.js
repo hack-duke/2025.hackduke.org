@@ -54,8 +54,9 @@ export const Footer = () => {
                 alt="Space Lighting"/>
             </Parallax>
 
-            <p className='absolute z-50 bottom-[1rem] text-center'>Made with 🩷 by the HackDuke team</p>
-            
+            <p className='absolute z-50 bottom-[0.5vw] left-1/2 -translate-x-1/2 text-center text-lg'>
+                Made with 🩷 by the HackDuke team
+            </p>
         </div>
     )
 }

@@ -3,10 +3,10 @@ import { Parallax } from 'react-scroll-parallax';
 export const Backdrop = () => {
     return (
         <div className="relative top-0 left-0 w-screen">
-            <Parallax speed={-15}>
+            <Parallax speed={5}>
                 <img src="/images/WallsBack.png" alt="Background Wall" className="absolute top-0 left-0 w-screen h-auto z-0" />
             </Parallax>
-            <Parallax speed={-5}>
+            <Parallax speed={10}>
                 <img
                     src="/images/RightCliffFrontTop.png"
                     alt="right front top cliff"

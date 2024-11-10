@@ -1,9 +1,9 @@
-import '../App.css'
+import '../App.css' /* Fix this import*/
 
 export const Backdrop = ({ children }) => {
     return (
         <div className="relative gradient-container">
-            <div className="top-0 left-0">
+            <div className="top-0 left-0"> {/* Anchored to top of the page */}
                 <img
                     src="/images/WallsBack.png"
                     alt="Background Wall"
@@ -30,8 +30,14 @@ export const Backdrop = ({ children }) => {
                     alt="Speaker Gradient Lighting"
                     className="absolute w-full z-0 left-0 top-[70vw]"
                 />
+
+                <img
+                    src="/images/Schedule Lighting.png"
+                    alt="Schedule Gradient Lighting"
+                    className="absolute w-full z-0 left-0 top-[140vw]"
+                />
             </div>
-            <div className="bottom-0 left-0">
+            <div className="bottom-0 left-0"> {/* Anchored to bottom of the page */}
                 <img
                     src="/images/Coral Cliff.png"
                     className='absolute z-10 h-auto w-[35vw] bottom-[10vw] left-0'
@@ -103,6 +109,18 @@ export const Backdrop = ({ children }) => {
                     className='absolute z-30 h-auto w-[33vw] bottom-[0vw] right-[5vw]' 
                     alt="Spaceship"
                 />
+
+                <img
+                    src="/images/Footer Mid Lighting.png"
+                    alt="Footer Mid Lighting"
+                    className="absolute w-[50vw] z-0 right-[12vw] bottom-[12vw]"
+                />
+
+                <img
+                    src="/images/Footer Down Lighting.png"
+                    alt="Footer Down Lighting"
+                    className="absolute w-[100vw] z-0 right-[0vw] bottom-[0vw]"
+                />  
             </div>
             {children}
         </div>

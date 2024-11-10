@@ -1,12 +1,12 @@
 import { GENERAL_QUESTIONS, LOGISTICS_QUESTIONS } from '../consts'
 import Accordion from './accordion'
+import { Panel } from "./panel"
+import { H1 } from "./typography"
 
 export const FAQ = () => {
   return (
-    <div className='h-[90vh] w-full text-white h-64 relative'>
-      <h1 className='text-8xl font-bold section-title text-center w-full'>
-        FAQ
-      </h1>
+    <Panel>
+      <H1 className='text-center mb-30'>FAQ</H1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
       <div className='absolute flex flex-row space-x-20 mx-auto left-[20%] top-32 z-10 w-[70%]'>
@@ -34,13 +34,13 @@ export const FAQ = () => {
       </div>
 
       <img
-        src='/images/Ray.svg'
+        src='/images/Ray.png'
         alt='Ray'
-        className='absolute z-10 right-52 w-[30%] bottom-4 z-1'
+        className='absolute z-0 w-[30vw] right-[4vw] bottom-[10vw]'
       ></img>
 
-      {/*<MusicNotes />*/}
-    </div>
+      {/*<MusicNotes /> scaling*/}
+    </Panel>
   )
 }
 
@@ -57,12 +57,12 @@ export const JellyFish = () => (
     <img
       src='/images/PinkJelly.png'
       alt='Pink Jellyfish'
-      className='absolute z-20 w-60 left-0 top-8'
+      className='absolute z-0 w-[20vw] left-[0vw] top-[vw]'
     />
     <img
       src='/images/BlueJelly.png'
       alt='Blue Jellyfish'
-      className='absolute z-20 w-44 bottom-10 left-32'
+      className='absolute z-0 w-[17vw] bottom-[5vw] left-[15vw]'
     />
   </div>
 )

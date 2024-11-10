@@ -1,6 +1,9 @@
+import { H1, P } from "./typography";
+import { Panel } from "./panel";
+
 export const About = () => {
   return (
-    <div className="w-screen h-[60vw]">
+    <Panel>
       <img
         src="/images/AboutLighting.png"
         alt="lighting for the about section"
@@ -39,17 +42,13 @@ export const About = () => {
 
       {/* About header and description */}
       <div className="absolute z-1 right-[5vw] flex flex-col items-center mt-8" style={{ width: '30vw' }}>
-        <h1 className='text-white text-[8vw] font-bold text-center w-full'>
-          About
-        </h1>
-        <p
-          className=" text-about_ticket_text font-urbanist font-semibold text-center text-[1.7vw]"
-        >
+        <H1>About</H1>
+        <P className="text-center">
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students
           to create meaningful solutions for social impact.
-        </p>
+        </P>
       </div>
-    </div>
+    </Panel>
   );
 };
 

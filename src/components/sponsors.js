@@ -1,11 +1,13 @@
 import React from 'react'
+import { Panel } from './panel'
+import { H1 } from './typography'
 
 export const Sponsors = () => {
   return (
-    <div className='h-full w-full bg-purple-900 text-white relative flex flex-col items-start justify-center px-8'>
+    <Panel>
+      <H1>Sponsors</H1>
 
-      <h2 className='text-5xl font-bold mb-8 z-10'>Sponsors</h2>
-      <div className='grid grid-cols-3 gap-4 w-full max-w-screen-md z-10 ml-32'>
+      <div className='grid grid-cols-3 gap-4 w-full max-w-screen-md z-10'>
         {/* Optiver */}
         <img
           src='/images/Optiver.svg'
@@ -56,6 +58,6 @@ export const Sponsors = () => {
           style={{ gridColumn: '2', gridRow: '3' }}
         />
       </div>
-    </div>
+    </Panel>
   )
 }

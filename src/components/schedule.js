@@ -1,9 +1,11 @@
+import { Panel } from "./panel"
+import { H1 } from "./typography"
+
 export const Schedule = () => {
   return (
-    <div className='h-screen text-white'>
-
+    <Panel>
       <div className='z-10 w-[25rem] mx-auto flex flex-col items-center mb-8'>
-        <img src="/images/ScheduleHeader.png" alt="About" className='h-[5rem]'/>
+        <H1>Schedule</H1>
       </div>
 
       <div className='max-w-4xl mx-auto px-16 relative z-10'>
@@ -77,6 +79,6 @@ export const Schedule = () => {
           </div>
         </div>
       </div>
-    </div>
+      </Panel>
   )
 }

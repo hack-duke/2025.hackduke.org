@@ -9,7 +9,7 @@ export const FAQ = () => {
       <H1 className='text-center mb-30'>FAQ</H1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
-      <div className='absolute flex flex-row space-x-20 mx-auto left-[20%] top-32 z-10 w-[70%]'>
+      <div className='absolute flex flex-row space-x-20 mx-auto left-[20%] top-32 z-30 w-[70%]'>
         <div className='pt-8 flex align-center flex-col mr-4'>
           <ListTitle title='General' />
           <Accordion
@@ -36,7 +36,7 @@ export const FAQ = () => {
       <img
         src='/images/Ray.png'
         alt='Ray'
-        className='absolute z-0 w-[30vw] right-[4vw] bottom-[10vw]'
+        className='absolute z-20 w-[30vw] right-[15vw] bottom-[5vw]'
       ></img>
 
       {/*<MusicNotes /> scaling*/}
@@ -46,7 +46,7 @@ export const FAQ = () => {
 
 export const ListTitle = ({ title }) => {
   return (
-    <h2 className='text-center mb-2 text-[#D4CDF4] text-3xl font-bold blur-[0.05rem] brightness-125'>
+    <h2 className='text-center mb-2 text-[#D4CDF4] text-3xl font-bold brightness-125'>
       {title}
     </h2>
   )
@@ -57,12 +57,12 @@ export const JellyFish = () => (
     <img
       src='/images/PinkJelly.png'
       alt='Pink Jellyfish'
-      className='absolute z-0 w-[20vw] left-[0vw] top-[vw]'
+      className='absolute z-20 w-[20vw] left-[0vw] top-[vw]'
     />
     <img
       src='/images/BlueJelly.png'
       alt='Blue Jellyfish'
-      className='absolute z-0 w-[17vw] bottom-[5vw] left-[15vw]'
+      className='absolute z-20 w-[17vw] bottom-[5vw] left-[15vw]'
     />
   </div>
 )

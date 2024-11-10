@@ -4,13 +4,6 @@ import { Panel } from "./panel";
 export const About = () => {
   return (
     <Panel>
-      <img
-        src="/images/AboutLighting.png"
-        alt="lighting for the about section"
-        className="absolute left-0 w-full h-auto transform z-0 right-[1rem]"
-        style={{ transform: 'translateY(-10vw)' }}
-      />
-
       {/* Coral, Fish, and Decor */}
 
       <img
@@ -27,25 +20,34 @@ export const About = () => {
       />
 
       {/* Tickets with Separate Texts */}
-      <div style={{ transform: 'translateX(12vw) translateY(20vw) rotate(-3deg)' }}>
-        <Ticket mainText="230+" subText="hackers" />
+      <div className="z-50"> {/* Group into another component */}
+        <div style={{ transform: 'translateX(12vw) translateY(20vw) rotate(-3deg)' }}> {/* This needs to be fixed or z values won't work */}
+          <Ticket mainText="230+" subText="hackers" />
+        </div>
+        <div style={{ transform: 'translateX(35vw) translateY(25vw) rotate(20deg)' }}>
+          <Ticket mainText="100+" subText="projects" />
+        </div>
+        <div style={{ transform: 'translateX(60vw) translateY(35vw) rotate(10deg)' }}>
+          <Ticket mainText="50+" subText="mentors" />
+        </div>
+        <div style={{ transform: 'translateX(30vw) translateY(22vw) rotate(-20deg)' }}>
+          <Ticket mainText="10+" subText="sponsors" />
+        </div>
       </div>
-      <div style={{ transform: 'translateX(35vw) translateY(25vw) rotate(20deg)' }}>
-        <Ticket mainText="100+" subText="projects" />
-      </div>
-      <div style={{ transform: 'translateX(60vw) translateY(35vw) rotate(10deg)' }}>
-        <Ticket mainText="50+" subText="mentors" />
-      </div>
-      <div style={{ transform: 'translateX(30vw) translateY(22vw) rotate(-20deg)' }}>
-        <Ticket mainText="10+" subText="sponsors" />
-      </div>
+      
+      <img
+        src="/images/Ticket Lighting.png"
+        alt="Ticket Gradient Lighting"
+        className="absolute w-[70vw] h-auto transform z-0 left-[10vw] top-0"
+      />
 
       {/* About header and description */}
-      <div className="absolute z-1 right-[5vw] flex flex-col items-center mt-8" style={{ width: '30vw' }}>
+
+      <div className="absolute z-1 w-[30vw] right-[6vw] top-[7vw] text-center">
         <H1>About</H1>
-        <P className="text-center">
+        <P>
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students
-          to create meaningful solutions for social impact.
+        to create meaningful solutions for social impact.
         </P>
       </div>
     </Panel>

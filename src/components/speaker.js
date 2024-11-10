@@ -4,7 +4,7 @@ import { H1, P } from "./typography";
 export const Speaker = () => {
   return (
     <Panel>
-      <div className="absolute z-1 w-[40vw] right-[6vw] top-[7vw] text-center">
+      <div className="absolute z-20 w-[40vw] right-[6vw] top-[7vw] text-center">
         <H1>Speaker</H1>
         <P>
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
@@ -20,7 +20,7 @@ export const Speaker = () => {
       <img
         src="/images/fishy.png"
         alt="fish"
-        className="absolute z-2 h-[15vw]"
+        className="absolute z-20 h-[15vw]"
       />
 
     </Panel>

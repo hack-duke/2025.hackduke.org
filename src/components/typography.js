@@ -13,7 +13,7 @@ export const H1 = ({ children, className = '', ...props }) => (
 );
 
 export const P = ({ children, className = '', ...props }) => (
-    <Typography as="p" className={`text-about_ticket_text font-semibold text-[1.7vw] ${className}`} {...props}>
+    <Typography as="p" className={`text-about_ticket_text font-semibold text-[1.7vw]${className}`} {...props}>
         {children}
     </Typography>
 );

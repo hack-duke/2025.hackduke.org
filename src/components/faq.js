@@ -9,7 +9,7 @@ export const FAQ = () => {
       <H1 className='text-center mb-30'>FAQ</H1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
-      <div className='absolute flex flex-row space-x-20 mx-auto left-[20%] top-32 z-30 w-[70%]'>
+      <div className='absolute flex flex-col sm:flex-row space-x-20 mx-auto left-[20%] top-32 z-30 w-[70%]'>
         <div className='pt-8 flex align-center flex-col mr-4'>
           <ListTitle title='General' />
           <Accordion

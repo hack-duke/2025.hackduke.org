@@ -152,8 +152,8 @@
   max-height: 200%;
   max-width: 200%;
   transform-origin: 75% 95%; /* 100px from left, 50px from top */
-  right: 10px;
-  bottom: -8rem;
+  right: 2vw;
+  bottom: -8vw;
   animation-delay: -0.5s;
   animation: tilt 5.45s infinite alternate ease-in-out; /* Animation name, duration, repeat, and easing */
 }

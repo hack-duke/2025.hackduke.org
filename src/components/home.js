@@ -5,7 +5,6 @@ export const Home = () => {
       <img src="/images/Waves.png" alt="Description" className="absolute -bottom-12 left-1/2 transform -translate-x-1/2 flex-grow" />
       <img src="/images/Buoy.png" alt="Description" className="z-10 absolute bottom-[10rem] right-[-17rem] transform -translate-x-1/2 w-auto h-auto scale-150" />
       <img src="/images/HomeStars.png" alt="Description" className="order-first absolute top-12 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
-      <img src="/images/Blur1.png" alt="Description" className="z-100 absolute top-12 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
       <img 
         src="/images/CodeForGood.png" 
         alt="Code For Good" 

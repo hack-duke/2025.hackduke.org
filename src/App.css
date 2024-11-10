@@ -14,6 +14,42 @@
   }
 }
 
+.speaker-title {
+  font-family: Urbanist, sans-serif;
+  font-size: 6em;
+  font-weight: 600;
+  line-height: 153.6px;
+  text-align: left;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.speaker-text {
+
+  font-family: Urbanist;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: -0.04em;
+  color: #D5CFFF;
+  text-align: right;
+
+}
+
+.speaker-body {
+  overflow-x: hidden;
+}
+
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 20px 0;
+  /* Adjust spacing as needed */
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -34,6 +70,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -43,6 +80,31 @@
 .gradient-container {
   background: linear-gradient(180deg, #132b84, #6556b5, #2a2f8a, #320a60, #1a083b); /* Example gradient */
   padding: 20px;
+}
+
+
+.custom-shell-bullet {
+  background-image: url('../public/images/ShellBullet.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.75em;
+  padding-left: 3em;
+  /* margin-bottom: 0.5em; */
+  color: #D5CFFF;
+}
+
+.custom-shell-bullet-alt {
+  background-image: url('../public/images/ShellBulletAlt.svg');
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 1.75em;
+  padding-left: 3em;
+  /* margin-bottom: 0.5em; */
+  color: #8C81EF;
+}
+
+.glow {
+  text-shadow: #FFF 0 0 10px;
 }
 
 .waves-container{

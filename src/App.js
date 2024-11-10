@@ -15,9 +15,7 @@ function App() {
     <ParallaxProvider>
       <Navbar />
 
-      <section id='home' className='relative'>
-        <Home />
-      </section>
+      <Home />
 
       <Backdrop>
         <section id='about'>
@@ -44,7 +42,7 @@ function App() {
           <Sponsors />
         </section>
 
-        <div className='h-[10vw]'></div> {/* spacer */}
+        <div className='h-[2vw]'></div> {/* spacer */}
 
       </Backdrop>
     </ParallaxProvider>

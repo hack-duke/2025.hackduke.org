@@ -5,11 +5,11 @@ import { H1 } from "./typography"
 
 export const FAQ = () => {
   return (
-    <Panel>
+    <div className='relative w-full min-h-[60vw] overflow-y-auto'>
       <H1 className='text-center mb-30'>FAQ</H1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
-      <div className='absolute flex flex-col sm:flex-row space-x-20 mx-auto left-[20%] top-32 z-30 w-[70%]'>
+      <div className='relative flex flex-col sm:flex-row space-x-20 mx-auto left-[20%] top-32 z-30 w-[70%]'>
         <div className='pt-8 flex align-center flex-col mr-4'>
           <ListTitle title='General' />
           <Accordion
@@ -36,17 +36,17 @@ export const FAQ = () => {
       <img
         src='/images/Ray.png'
         alt='Ray'
-        className='absolute z-20 w-[30vw] right-[15vw] bottom-[5vw]'
+        className='relative z-20 w-[30vw] right-[15vw] bottom-[5vw]'
       ></img>
 
       {/*<MusicNotes /> scaling*/}
-    </Panel>
+    </div>
   )
 }
 
 export const ListTitle = ({ title }) => {
   return (
-    <h2 className='text-center mb-2 text-[#D4CDF4] text-3xl font-bold brightness-125'>
+    <h2 className='text-center mb-2 text-[#D4CDF4] text-2xl sm:text-3xl font-bold brightness-125'>
       {title}
     </h2>
   )

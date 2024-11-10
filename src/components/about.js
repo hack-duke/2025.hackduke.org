@@ -1,132 +1,71 @@
+import { H1, P } from "./typography";
+import { Panel } from "./panel";
+
 export const About = () => {
   return (
-    <div className="w-[100vw]">
-      {/* The Top Walls */}
-      <img src="/images/WallsBack.png" alt="Background Wall" className="absolute left-0 right-0 w-screen h-auto z-0" />
-      <img
-        src="/images/RightCliffFrontTop.png"
-        alt="right front top cliff"
-        className="absolute right-0 w-[20vw] max-w-none h-auto z-0 transform"
-        style={{ transform: 'translateY(10vw)' }}
-      />
-      <img
-        src="/images/LeftCliffFrontTop.png"
-        alt="left front top cliff"
-        className="absolute left-0 w-[20vw] max-w-none h-auto z-0 transform"
-        style={{ transform: 'translateY(10vw)' }}
-      />
-
-      <img
-        src="/images/AboutLighting.png"
-        alt="lighting for the about section"
-        className="absolute left-0 w-full h-auto transform z-0 right-[1rem]"
-        style={{ transform: 'translateY(-10vw)' }}
-      />
-
+    <Panel>
       {/* Coral, Fish, and Decor */}
-      <img
-        src="/images/AboutRedCoral.png"
-        alt="Red Coral decoration"
-        className="absolute left-0 w-[25vw] max-w-none h-auto z-0"
-        style={{ transform: 'translateY(20vw) translateX(2vw)'  }}
-      />
-      <img
-        src="/images/AboutLeftSpeaker.png"
-        alt="About Left Speaker"
-        className="absolute left-2 w-[10vw] max-w-none h-auto z-1"
-        style={{ transform: 'translateY(32vw) translateX(5vw)' }}
-      />
-      <img
-        src="/images/AboutYellowCoral.png"
-        alt="Yellow Coral"
-        className="absolute left-5 w-[10vw] max-w-none h-auto z-1"
-        style={{ transform: 'translateY(35vw) translateX(3vw)' }}
-      />
 
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the left"
-        className="absolute h-[20vw] max-w-none z-2 left-[2rem]"
+        className="absolute h-[20vw] max-w-none z-2 left-[2vw]"
       />
 
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the right"
-        className="absolute h-[25vw] max-w-none z-2 transform right-[7rem]"
-        style={{ transform: 'rotate(-10deg) translateY(13rem)' }}
+        className="absolute h-[25vw] max-w-none z-2 right-[7vw]"
+        style={{ transform: 'rotate(-10deg) translateY(40vw)' }}
       />
 
+      {/* Tickets with Separate Texts */}
+      <div className="z-50"> {/* Group into another component */}
+        <div style={{ transform: 'translateX(12vw) translateY(20vw) rotate(-3deg)' }}> {/* This needs to be fixed or z values won't work */}
+          <Ticket mainText="230+" subText="hackers" />
+        </div>
+        <div style={{ transform: 'translateX(35vw) translateY(25vw) rotate(20deg)' }}>
+          <Ticket mainText="100+" subText="projects" />
+        </div>
+        <div style={{ transform: 'translateX(60vw) translateY(35vw) rotate(10deg)' }}>
+          <Ticket mainText="50+" subText="mentors" />
+        </div>
+        <div style={{ transform: 'translateX(30vw) translateY(22vw) rotate(-20deg)' }}>
+          <Ticket mainText="10+" subText="sponsors" />
+        </div>
+      </div>
+      
       <img
-        src="/images/AboutBlueSparkleOverlay.png"
-        className="absolute w-full h-auto z-2 right-[2rem]"
-        alt="blue sparkles"
+        src="/images/Ticket Lighting.png"
+        alt="Ticket Gradient Lighting"
+        className="absolute w-[70vw] h-auto transform z-0 left-[10vw] top-0"
       />
-
-      {/* Tickets */}
-      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(17vw) translateY(26vw) rotate(-3deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          230+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          hackers
-        </p>
-      </div>
-
-      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(40vw) translateY(15vw) rotate(20deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          100+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          projects
-        </p>
-      </div>
-
-      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(60vw) translateY(28vw) rotate(10deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          50+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          mentors
-        </p>
-      </div>
-
-      <div className="absolute w-[23vw] max-w-none h-auto" style={{ transform: 'translateX(35vw) translateY(38vw) rotate(-20deg)' }}>
-        <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
-          style={{ transform: 'translateY(-2vw) translateX(-2vw) rotate(-3deg)' }}>
-          10+
-        </p>
-        <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
-          style={{ transform: 'translateY(2vw) translateX(-2vw) rotate(-3deg)' }}>
-          sponsors
-        </p>
-      </div>
 
       {/* About header and description */}
-      <div className="absolute z-1 left-[58vw] flex flex-col items-center" style={{ width: '40vw'}}>
-        <img src="/images/AboutHeader.png" alt="About" className="h-[6vw] max-w-full" />
-        <p
-          className=" text-about_ticket_text font-urbanist font-bold text-center flex items-center justify-center"
-          style={{
-            width: '90%',
-            height: '100%',
-            fontSize: '1.7vw', // Adjust this value based on how large you want the text
-            lineHeight: '2vw', // Adjust line height as needed
-          }}
-        >
+
+      <div className="absolute z-1 w-[30vw] right-[6vw] top-[7vw] text-center">
+        <H1>About</H1>
+        <P>
           Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students
-          to create meaningful solutions for social impact.
-        </p>
+        to create meaningful solutions for social impact.
+        </P>
       </div>
+    </Panel>
+  );
+};
+
+export const Ticket = ({ mainText, subText }) => { /* We should really convert these to percentages */
+  return (
+    <div className="absolute w-[24vw] max-w-none h-auto">
+      <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
+      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-lg md:text-xl lg:text-4xl font-urbanist"
+        style={{ transform: 'translateY(-1.25vw) translateX(-2vw) rotate(-3deg)' }}>
+        {mainText}
+      </p>
+      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm md:text-lg lg:text-2xl font-urbanist"
+        style={{ transform: 'translateY(1.25vw) translateX(-2vw) rotate(-3deg)' }}>
+        {subText}
+      </p>
     </div>
   );
 };

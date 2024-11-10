@@ -1,15 +1,15 @@
 import { GENERAL_QUESTIONS, LOGISTICS_QUESTIONS } from '../consts'
 import Accordion from './accordion'
+import { Panel } from "./panel"
+import { H1 } from "./typography"
 
 export const FAQ = () => {
   return (
-    <div className='h-[90vh] w-full text-white h-64 relative'>
-      <h1 className='text-8xl font-bold section-title text-center w-full'>
-        FAQ
-      </h1>
+    <Panel>
+      <H1 className='text-center mb-30'>FAQ</H1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
-      <div className='absolute flex flex-row space-x-20 mx-auto left-[20%] top-32 z-10 w-[70%]'>
+      <div className='absolute flex flex-row space-x-20 mx-auto left-[20%] top-32 z-30 w-[70%]'>
         <div className='pt-8 flex align-center flex-col mr-4'>
           <ListTitle title='General' />
           <Accordion
@@ -34,18 +34,19 @@ export const FAQ = () => {
       </div>
 
       <img
-        src='/images/Ray.svg'
-        className='absolute right-52 w-[30%] bottom-4 z-1'
+        src='/images/Ray.png'
+        alt='Ray'
+        className='absolute z-20 w-[30vw] right-[15vw] bottom-[5vw]'
       ></img>
 
-      <MusicNotes />
-    </div>
+      {/*<MusicNotes /> scaling*/}
+    </Panel>
   )
 }
 
 export const ListTitle = ({ title }) => {
   return (
-    <h2 className='text-center mb-2 text-[#D4CDF4] text-3xl font-bold blur-[0.05rem] brightness-125'>
+    <h2 className='text-center mb-2 text-[#D4CDF4] text-3xl font-bold brightness-125'>
       {title}
     </h2>
   )
@@ -56,12 +57,12 @@ export const JellyFish = () => (
     <img
       src='/images/PinkJelly.png'
       alt='Pink Jellyfish'
-      className='absolute z-20 w-60 left-0 top-8'
+      className='absolute z-20 w-[20vw] left-[0vw] top-[vw]'
     />
     <img
       src='/images/BlueJelly.png'
       alt='Blue Jellyfish'
-      className='absolute z-20 w-44 bottom-10 left-32'
+      className='absolute z-20 w-[17vw] bottom-[5vw] left-[15vw]'
     />
   </div>
 )

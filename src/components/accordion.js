@@ -33,10 +33,10 @@ const AccordionItem = ({ title, content, isOpen, onClick, index }) => {
         }`}
         onClick={onClick}
       >
-        <p className='text-2xl'>{title}</p>
+      <p className='text-2xl'>{title}</p>
       </div>
       <div
-        className={`text-xl opacity-75 ml-[3.2rem] content ${
+        className={`text-xl text-white opacity-75 ml-[3.2rem] content ${
           isOpen ? 'open' : ''
         }`}
       >

@@ -1,7 +1,7 @@
 export const Backdrop = () => {
     return (
-        <div className="relative"> { /* Ensures the graphics are positioned under the homepage */}
-            <div className="top-0 left-0 w-full">
+        <>
+            <div className="top-0 left-0">
                 <img 
                     src="/images/WallsBack.png" 
                     alt="Background Wall" 
@@ -14,7 +14,13 @@ export const Backdrop = () => {
                     <RightWall/>
                 </div>
             </div>
-        </div>
+            <div className="bottom-0 left-0"> 
+                <img 
+                    src="/images/Crab Cliff.png" 
+                    className='absolute z-10 w-[50vw]' 
+                    alt="Crab Cliff"/>
+            </div>
+        </>
     );
 }
 

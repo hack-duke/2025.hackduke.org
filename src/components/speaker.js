@@ -1,6 +1,6 @@
 export const Speaker = () => {
   return (
-    <div className="h-screen">
+    <div className="w-screen h-[60vw]">
       <div className="absolute z-1" style={{ transform: 'translate(45vw,20vh)', width: '30vw' }}>
         <h1 className='text-white text-8xl font-bold text-center'>
           Speaker

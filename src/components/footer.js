@@ -1,8 +1,9 @@
 import { Parallax } from 'react-scroll-parallax';
 
 export const Footer = () => {
-    return (
-        <div className='relative w-full text-white'>
+}
+
+{/*<div className='relative w-full text-white'>
             <Parallax speed={5}>
                 <img 
                     src="/images/Background Left Cliff.png" 
@@ -68,6 +69,4 @@ export const Footer = () => {
             <p className='absolute z-50 left-1/2 -translate-x-1/2 text-center text-[1.7vw] bottom-[-7rem]'>
                 Made with 🩷 by the HackDuke team
             </p>
-        </div>
-    )
-}
+        </div>*/}

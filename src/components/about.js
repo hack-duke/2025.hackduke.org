@@ -53,7 +53,7 @@ export const About = () => {
   );
 };
 
-export const Ticket = ({ mainText, subText }) => {
+export const Ticket = ({ mainText, subText }) => { /* We should really convert these to percentages */
   return (
     <div className="absolute w-[24vw] max-w-none h-auto">
       <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />

@@ -1,5 +1,5 @@
 import './App.css'
-import { Navbar } from './components/navbar'
+import { TheNavbar } from './components/navbar'
 import { Home } from './components/home'
 import { About } from './components/about'
 import { Tracks } from './components/tracks'
@@ -13,7 +13,7 @@ import { ParallaxProvider } from 'react-scroll-parallax';
 function App() {
   return (
     <ParallaxProvider>
-      <Navbar />
+      <TheNavbar />
 
       <Home />
 

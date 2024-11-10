@@ -1,6 +1,6 @@
 export const About = () => {
   return (
-    <div className="h-screen">
+    <div className="w-screen h-[60vw]">
       <img
         src="/images/AboutLighting.png"
         alt="lighting for the about section"
@@ -13,33 +13,33 @@ export const About = () => {
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the left"
-        className="absolute h-[20vw] max-w-none z-2 left-[2rem]"
+        className="absolute h-[20vw] max-w-none z-2 left-[2vw]"
       />
 
       <img
         src="/images/AboutFish.png"
         alt="school of fish on the right"
-        className="absolute h-[25vw] max-w-none z-2 transform right-[7rem]"
-        style={{ transform: 'rotate(-10deg) translateY(13rem)' }}
+        className="absolute h-[25vw] max-w-none z-2 right-[7vw]"
+        style={{ transform: 'rotate(-10deg) translateY(40vw)' }}
       />
 
       {/* Tickets with Separate Texts */}
-      <div style={{ transform: 'translateX(17vw) translateY(25vw) rotate(-3deg)' }}>
+      <div style={{ transform: 'translateX(12vw) translateY(20vw) rotate(-3deg)' }}>
         <Ticket mainText="230+" subText="hackers" />
       </div>
-      <div style={{ transform: 'translateX(40vw) translateY(30vw) rotate(20deg)' }}>
+      <div style={{ transform: 'translateX(35vw) translateY(25vw) rotate(20deg)' }}>
         <Ticket mainText="100+" subText="projects" />
       </div>
-      <div style={{ transform: 'translateX(65vw) translateY(40vw) rotate(10deg)' }}>
+      <div style={{ transform: 'translateX(60vw) translateY(35vw) rotate(10deg)' }}>
         <Ticket mainText="50+" subText="mentors" />
       </div>
-      <div style={{ transform: 'translateX(35vw) translateY(27vw) rotate(-20deg)' }}>
+      <div style={{ transform: 'translateX(30vw) translateY(22vw) rotate(-20deg)' }}>
         <Ticket mainText="10+" subText="sponsors" />
       </div>
 
       {/* About header and description */}
       <div className="absolute z-1 right-[5vw] flex flex-col items-center mt-8" style={{ width: '30vw' }}>
-        <h1 className='text-white text-8xl font-bold text-center w-full'>
+        <h1 className='text-white text-[8vw] font-bold text-center w-full'>
           About
         </h1>
         <p

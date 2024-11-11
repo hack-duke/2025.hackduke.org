@@ -39,7 +39,7 @@ export const Tracks = () => {
         widthClass="w-[18vw]" 
         imageWidthClass="w-[18vw]"
         leftClass="left-[5vw] md:left-[25vw]" 
-        bottomClass="bottom-[3vh]" 
+        bottomClass="bottom-[5vh] md:bottom-[3vh]" 
         rightClass="right-auto" 
         topClass="top-auto" 
       />
@@ -50,7 +50,7 @@ export const Tracks = () => {
         image_alt="Turtle"
         widthClass="w-[12vw]"
         imageWidthClass="w-[12vw]"
-        leftClass="left-[14vw]"
+        leftClass="left-[20vw] md:left-[14vw]"
         topClass="top-[10vh] md:top-[20vh]"
         rightClass="right-auto"
         bottomClass="bottom-auto"

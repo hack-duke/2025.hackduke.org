@@ -41,7 +41,6 @@ export const TheNavbar = () => {
       className={`text-white ${show ? '' : 'd-none'}`} 
     >
       <Container>
-        <Navbar.Brand className="ms-3">HackDuke 2025</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">

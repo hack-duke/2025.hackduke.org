@@ -21,7 +21,7 @@ export const BackdropBottomAnchor = () => {
 
             <img
                 src="/images/Crab Cliff.png"
-                className='absolute bottom-[-5vw] left-[0vw] z-10 w-[70vw]'
+                className='absolute bottom-[0vw] left-[0vw] z-10 w-[70vw]'
                 alt="Crab Cliff"
             />
 

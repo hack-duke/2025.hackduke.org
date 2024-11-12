@@ -42,7 +42,7 @@ function App() {
           <Sponsors />
         </section>
 
-        <div className='h-[2vw]'></div> {/* spacer */}
+        <div className='h-[20vw]'></div> {/* spacer frame */}
 
       </Backdrop>
     </ParallaxProvider>

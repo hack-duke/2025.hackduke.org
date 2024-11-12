@@ -1,71 +1,64 @@
+import { Panel } from "./panel";
+import { H1, P } from "./typography";
+
 export const Speaker = () => {
   return (
-    <div className="h-screen flex flex-col w-full text-white speaker-body">
+    <Panel>
+      <div className="absolute z-20 w-[40vw] right-[6vw] top-[7vw] text-center">
+        <H1>Speaker</H1>
+        <P>
+          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
+          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
+          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
+        </P>
+      </div>
 
-      <h1 className="speaker-title" style={{ transform: 'translate(65vw, -5vh)', height: '20vw' }}>Speaker</h1>
-      <p className='speaker-text' style={{ transform: 'translate(60vw, -20vh)', width: '30vw' }}>Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-        Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-        Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-
-      </p>
-
-      <img
-        src="/images/speakershark.png"
-        alt="rishi shark"
-        className="absolute z-2"
-        style={{ transform: 'translate(-2vw, 10vh)', height: '40vw' }}
-      />
+      <div className="absolute w-[60vw] left-[-7vw] top-[-5vw]">
+        <SpeakerShark />
+      </div>
 
       <img
         src="/images/fishy.png"
         alt="fish"
-        className="absolute z-2"
-        style={{ transform: 'translate(-2vw, 2vh)', height: '15vw' }}
+        className="absolute z-20 h-[15vw]"
       />
 
-      <img
-        src="/images/music.svg"
-        alt="note"
-        className="absolute z-2"
-        style={{ transform: 'translate(16vw, 25vh)', height: '5vw' }}
-      />
-
-      <img
-        src="/images/music.svg"
-        alt="note"
-        className="absolute z-2"
-        style={{ transform: 'translate(48vw,2vh)', height: '5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(35vw,8vh)', height: '2.5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(13vw,25vh)', height: '2.5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(8vw,75vh)', height: '2.5vw' }}
-      />
-
-      <img
-        src="/images/sparkle.png"
-        alt="sparkle"
-        className="absolute z-2"
-        style={{ transform: 'translate(64vw,85vh)', height: '2.5vw' }}
-      />
-
-
-    </div>
+    </Panel>
   );
 };
+
+export const SpeakerShark = () => {
+  return (
+    <div style={{ position: 'relative', width: '100%' }}>
+      <img
+        src="/images/SpeakerSharkFrame.png"
+        alt="Speaker Shark Frame"
+        style={{ width: '100%' }}
+      />
+      <img
+        src="/images/SpeakerSharkTeethOverlay.png"
+        alt="Speaker Shark Teeth"
+        style={{
+          position: 'absolute',
+          top: '39%',
+          left: '48%',
+          transform: 'translateX(-50%)',
+          width: '49%',
+          zIndex: 10,
+        }}
+      />
+      <img
+        src="/images/Speaker.png"
+        alt="Speaker"
+        style={{
+          position: 'absolute',
+          top: '43%',
+          left: '48%',
+          transform: 'translateX(-50%)',
+          width: '43%',
+          borderRadius: '50%',
+        }}
+      />
+    </div>
+  );
+}

@@ -1,0 +1,10 @@
+.content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.content.open {
+    max-height: 8vh;
+    /* Adjust this value based on your content */
+}

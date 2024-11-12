@@ -1,40 +1,11 @@
+import { Panel } from "./panel"
+import { H1 } from "./typography"
+
 export const Schedule = () => {
   return (
-    <div className='h-[90vh] text-white'>
-      <img src="/images/ScheduleLeftSpeaker.png" alt="About Left Speaker" 
-        className='absolute left-5 w-auto h-[15rem] z-0'
-        style={{ transform: 'translateY(24.375rem)'}}/>
-      <img src="/images/ScheduleYellowCoral.png" alt="Yellow Coral"
-        className='absolute left-5 w-auto h-[12rem] z-0'
-        style={{ transform: 'translateY(28.125rem)'}}/>
-      <img src="/images/ScheduleRightSpeaker.png" alt="About Left Speaker" 
-        className='absolute right-5 w-auto h-[15rem] z-0'
-        style={{ transform: 'translateY(22.5rem)'}}/>
-
-      {/* Music Notes near left speaker */}
-      <img src="/images/MusicNote.png" alt="Music Note 1" 
-        className='absolute left-[8rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(18.75rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 2" 
-        className='absolute left-[10rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(22rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 3" 
-        className='absolute left-[12rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(16rem)'}}/>
-
-      {/* Music Notes near right speaker */}
-      <img src="/images/MusicNote.png" alt="Music Note 1" 
-        className='absolute right-[12rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(18.75rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 2" 
-        className='absolute right-[15rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(22rem)'}}/>
-      <img src="/images/MusicNote.png" alt="Music Note 3" 
-        className='absolute right-[17rem] w-auto h-[2rem] z-0'
-        style={{ transform: 'translateY(16rem)'}}/>
-
+    <Panel>
       <div className='z-10 w-[25rem] mx-auto flex flex-col items-center mb-8'>
-        <ListTitle title="Schedule" />
+        <H1>Schedule</H1>
       </div>
 
       <div className='max-w-4xl mx-auto px-16 relative z-10'>
@@ -108,7 +79,7 @@ export const Schedule = () => {
           </div>
         </div>
       </div>
-    </div>
+      </Panel>
   )
 }
 

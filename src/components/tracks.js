@@ -17,16 +17,16 @@ export const Tracks = () => {
   // TODO: Lighting
   // TODO: Responsiveness
   return (
-    <Panel className="h-[75vw] md:h-[40vw]">
+    <Panel>
       <H1 className="text-center">Tracks</H1>
       <Track 
         title="Interactive Media"
         image_src="/images/TracksCrab.svg"
         image_alt="Crab"
-        widthClass="w-[35vw] md:w-[20vw]"
+        widthClass="w-[35vw]"
         imageWidthClass="w-[13vw]"
-        rightClass="right-[15vw] md:right-[7.5vw]"
-        bottomClass="bottom-[5vh]"
+        rightClass="right-[20vw]"
+        bottomClass="bottom-[10vw]"
         leftClass="left-auto"
         topClass="top-auto"
       />
@@ -38,8 +38,8 @@ export const Tracks = () => {
         image_alt="Generic Fish" 
         widthClass="w-[18vw]" 
         imageWidthClass="w-[18vw]"
-        leftClass="left-[5vw] md:left-[25vw]" 
-        bottomClass="bottom-[5vh] md:bottom-[3vh]" 
+        leftClass="left-[10vw]" 
+        bottomClass="bottom-[10vw]" 
         rightClass="right-auto" 
         topClass="top-auto" 
       />
@@ -50,8 +50,8 @@ export const Tracks = () => {
         image_alt="Turtle"
         widthClass="w-[12vw]"
         imageWidthClass="w-[12vw]"
-        leftClass="left-[20vw] md:left-[14vw]"
-        topClass="top-[10vh] md:top-[20vh]"
+        leftClass="left-[25vw]"
+        topClass="top-[15vw]"
         rightClass="right-auto"
         bottomClass="bottom-auto"
       />
@@ -62,8 +62,8 @@ export const Tracks = () => {
         image_alt="Whale"
         widthClass="w-[25vw]"
         imageWidthClass="w-[25vw]"
-        rightClass="right-[10vw] md:right-[27vw]"
-        topClass="top-[10vh] md:top-[20vh]"
+        rightClass="right-[15vw]"
+        topClass="top-[15vw]"
         leftClass="left-auto"
         bottomClass="bottom-auto"
       />

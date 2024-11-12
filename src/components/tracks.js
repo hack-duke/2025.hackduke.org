@@ -17,7 +17,7 @@ export const Tracks = () => {
   // TODO: Lighting
   // TODO: Responsiveness
   return (
-    <Panel className="h-[40vh] md:h-[80vh]">
+    <Panel className="h-[75vw] md:h-[40vw]">
       <H1 className="text-center">Tracks</H1>
       <Track 
         title="Interactive Media"

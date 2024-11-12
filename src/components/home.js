@@ -9,7 +9,7 @@ export const Home = () => {
         {/* <div className="wave wave3"></div>
         <div className="wave wave4"></div> */}
       </section>
-      <img src="/images/Buoy.png" alt="Description" className="buoy z-10 absolute bottom-[10rem] right-[-17rem] transform -translate-x-1/2 w-auto h-auto scale-150" />
+      <img src="/images/Buoy.svg" alt="Description" className="buoy z-10 absolute bottom-[10rem] right-[-17rem] transform -translate-x-1/2 w-auto h-auto scale-150" />
       <img src="/images/HomeStars.png" alt="Description" className="order-first absolute top-12 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
       {/* <img 
         src="/images/CodeForGood.png" 

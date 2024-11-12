@@ -13,7 +13,7 @@ export const BackdropTopAnchor = () => {
             <RightWall />
         </div>
         <img
-            src="/images/AboutLighting.png"
+            src="/images/AboutLighting.svg"
             alt="lighting for the about section"
             className="absolute w-full z-0 left-0 top-[-50vw]"
         />
@@ -23,7 +23,7 @@ export const BackdropTopAnchor = () => {
             className="absolute w-[50vw] z-0 left-[0vw] top-[35vw]"
         />
         <img
-            src="/images/Speaker Lighting.png"
+            src="/images/Speaker Lighting.svg"
             alt="Speaker Gradient Lighting"
             className="absolute w-full z-0 left-0 top-[70vw]"
         />
@@ -34,8 +34,12 @@ export const BackdropTopAnchor = () => {
             className="absolute w-full z-0 left-0 top-[140vw]"
         />
     </div>
+
+    
     )
 }
+
+
 
 export const LeftWall = () => {
     return (

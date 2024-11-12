@@ -8,7 +8,7 @@ export const Schedule = () => {
         className='absolute left-5 w-auto h-[12rem] z-0'
         style={{ transform: 'translateY(28.125rem)'}}/>
       <img src="/images/ScheduleRightSpeaker.png" alt="About Left Speaker" 
-        className='absolute right-10 w-auto h-[15rem] z-0'
+        className='absolute right-5 w-auto h-[15rem] z-0'
         style={{ transform: 'translateY(22.5rem)'}}/>
 
       {/* Music Notes near left speaker */}
@@ -34,7 +34,7 @@ export const Schedule = () => {
         style={{ transform: 'translateY(16rem)'}}/>
 
       <div className='z-10 w-[25rem] mx-auto flex flex-col items-center mb-8'>
-        <img src="/images/ScheduleHeader.png" alt="About" className='h-[5rem]'/>
+        <ListTitle title="Schedule" />
       </div>
 
       <div className='max-w-4xl mx-auto px-16 relative z-10'>
@@ -109,5 +109,13 @@ export const Schedule = () => {
         </div>
       </div>
     </div>
+  )
+}
+
+const ListTitle = ({ title }) => {
+  return (
+    <h2 className='text-center mb-4 text-[#D4CDF4] text-xl font-bold blur-[0.05rem] brightness-125'>
+      {title}
+    </h2>
   )
 }

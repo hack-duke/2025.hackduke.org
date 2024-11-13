@@ -167,4 +167,12 @@
   }
 }
 
+@media (max-width: 768px) {
+  .custom-shell-bullet,
+  .custom-shell-bullet-alt {
+    background-size: 2vw;
+    padding-left: 2.5vw;
+  }
+}
+
 

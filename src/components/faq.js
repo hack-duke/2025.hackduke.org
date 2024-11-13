@@ -5,12 +5,12 @@ import { H1 } from "./typography"
 
 export const FAQ = () => {
   return (
-    <Panel>
+    <Panel className="h-[90vw] md:h-[60vw]">
       <H1 className='text-center mb-30'>FAQ</H1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
-      <div className='absolute flex flex-row space-x-20 mx-auto left-[20%] top-32 z-30 w-[70%]'>
-        <div className='pt-8 flex align-center flex-col mr-4'>
+      <div className='absolute flex flex-col md:flex-row md:space-x-20 mx-auto left-[30%] md:left-[20%] top-8 md:top-32 z-30'>
+        <div className='pt-8 flex align-center flex-col max-w-[45vw] md:mr-4'>
           <ListTitle title='General' />
           <Accordion
             items={GENERAL_QUESTIONS.map(question => ({
@@ -21,7 +21,7 @@ export const FAQ = () => {
           />
         </div>
 
-        <div className='pt-8 flex align-center flex-col'>
+        <div className='md:pt-8 flex align-center flex-col ml-20 md:ml-0 max-w-[35vw]'>
           <ListTitle title='Logistics' />
           <Accordion
             items={LOGISTICS_QUESTIONS.map(question => ({
@@ -36,7 +36,7 @@ export const FAQ = () => {
       <img
         src='/images/Ray.png'
         alt='Ray'
-        className='absolute z-20 w-[30vw] right-[15vw] bottom-[5vw]'
+        className='absolute z-20 w-[30vw] right-[15vw] bottom-[0vw] md:bottom-[5vw]'
       ></img>
 
       {/*<MusicNotes /> scaling*/}
@@ -46,7 +46,7 @@ export const FAQ = () => {
 
 export const ListTitle = ({ title }) => {
   return (
-    <h2 className='text-center mb-2 text-[#D4CDF4] text-3xl font-bold brightness-125'>
+    <h2 className={'glow text-center mb-2 text-[#D4CDF4] text-[3vw] md:text-3xl font-bold brightness-125'}>
       {title}
     </h2>
   )

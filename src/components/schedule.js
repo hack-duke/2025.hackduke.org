@@ -4,8 +4,8 @@ import { H1 } from "./typography"
 const ScheduleItem = ({ time, event }) => {
   return (
     <div className='flex justify-between items-center'>
-      <span className='text-base w-32 text-[#FBF9F7] font-bold whitespace-nowrap'>{time}</span>
-      <span className='text-base flex-1 ml-4 text-[#FBF9F7] font-normal'>{event}</span>
+      <span className='text-[1.25vw] text-[#FBF9F7] font-bold whitespace-nowrap'>{time}</span>
+      <span className='text-[1.25vw] flex-1 ml-[2vw] text-[#FBF9F7]'>{event}</span>
     </div>
   )
 }
@@ -13,8 +13,8 @@ const ScheduleItem = ({ time, event }) => {
 const DaySchedule = ({ date, events }) => {
   return (
     <div>
-      <h2 className='text-3xl mb-6 text-center tracking-wide text-[#D5CFFFF2] font-normal'>{date}</h2>
-      <div className='space-y-3'>
+      <h2 className='text-[3vw] text-center text-[#D5CFFFF2]'>{date}</h2>
+      <div className=''>
         {events.map((event, index) => (
           <ScheduleItem key={index} time={event.time} event={event.event} />
         ))}
@@ -45,13 +45,13 @@ export const Schedule = () => {
   ]
 
   return (
-    <Panel>
-      <div className='z-10 w-[25rem] mx-auto flex flex-col items-center mb-8'>
+    <Panel className="h-[75vw] md:h-[60vw]">
+      <div className='z-10 w-screen text-center'>
         <H1>Schedule</H1>
       </div>
 
-      <div className='max-w-4xl mx-auto px-16 relative z-10'>
-        <div className='grid grid-cols-2 gap-16'>
+      <div className='w-screen flex justify-center'>
+        <div className='flex flex-col md:flex-row gap-[5vw]'>
           <DaySchedule date="10/22/24" events={day1Events} />
           <DaySchedule date="10/23/24" events={day2Events} />
         </div>

@@ -1,5 +1,5 @@
 import './App.css'
-import { TheNavbar } from './components/navbar'
+import { Navbar } from './components/navbar'
 import { Home } from './components/home'
 import { About } from './components/about'
 import { Tracks } from './components/tracks'
@@ -8,12 +8,11 @@ import { FAQ } from './components/faq'
 import { Sponsors } from './components/sponsors'
 import { Speaker } from './components/speaker'
 import { Backdrop } from './components/backdrop'
-import { ParallaxProvider } from 'react-scroll-parallax';
 
 function App() {
   return (
-    <ParallaxProvider>
-      <TheNavbar />
+    <>
+      <Navbar />
 
       <Home />
 
@@ -45,7 +44,7 @@ function App() {
         <div className='h-[20vw]'></div> {/* spacer frame */}
 
       </Backdrop>
-    </ParallaxProvider>
+    </>
   )
 }
 

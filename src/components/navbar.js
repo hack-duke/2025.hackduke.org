@@ -1,30 +1,16 @@
-import React, { useState, useEffect, useCallback } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Logo } from './logo';
+import { FiMenu, FiX } from 'react-icons/fi';
 
-export const TheNavbar = () => {
-  const [show, setShow] = useState(true); 
-  const [lastScrollY, setLastScrollY] = useState(0); 
+const ApplyButton = () => {
+  return (
+    <button className='text-white text-2xl bg-gradient-to-b from-[#A414B5] to-[#540A5D] pl-8 pr-8 pt-1 pb-1 rounded-xl'>
+      Apply
+    </button>
+  )
+}
 
-  const handleScroll = useCallback(() => {
-    if (window.scrollY > lastScrollY) {
-      setShow(false);
-    } else {
-      setShow(true);
-    }
-    setLastScrollY(window.scrollY);
-  }, [lastScrollY]);
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, [handleScroll]);
-
-
-
+const NavLink = ({sectionId, title}) => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -33,47 +19,62 @@ export const TheNavbar = () => {
   };
 
   return (
-    <Navbar
-      bg="transparent" 
-      variant="dark"
-      expand="lg"
-      fixed="top"
-      className={`text-white ${show ? '' : 'd-none'}`} 
-    >
-      <Container>
-        <Navbar.Toggle aria-controls="navbar-nav" />
-        <Navbar.Collapse id="navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link onClick={() => scrollToSection('about')} className="me-3">
-              About
-            </Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('tracks')} className="me-3">
-              Tracks
-            </Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('speaker')} className="me-3">
-              Speaker
-            </Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('schedule')} className="me-3">
-              Schedule
-            </Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('faq')} className="me-3">
-              FAQ
-            </Nav.Link>
-            <Nav.Link onClick={() => scrollToSection('sponsors')} className="me-3">
-              Sponsors
-            </Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-      <style>
-        {`
-          @media (max-width: 992px) {
-            .navbar-collapse {
-              background-color: black !important; /* Set white background for dropdown */
-            }
-          }
-        `}
-      </style>
-    </Navbar>
+    <button className="text-white flex" onClick={() => scrollToSection(sectionId)}>{title}</button>
+  )
+}
+
+const NavLinks = ({isMobile}) => {
+  const links = [
+    { sectionId: 'about', title: 'About' },
+    { sectionId: 'tracks', title: 'Tracks' },
+    { sectionId: 'schedule', title: 'Schedule' },
+    { sectionId: 'faq', title: 'FAQ' },
+    { sectionId: 'sponsors', title: 'Sponsors' },
+  ];
+
+  return (
+    <>
+      {
+        isMobile ? (
+          <div className='flex flex-col text-lg text-start bg-black rounded-md p-4'>
+            {links.map((link) => {
+              return <NavLink key={link.sectionId} sectionId={link.sectionId} title={link.title}/>
+            })}
+          </div>
+        ) : (
+          <div className='flex text-2xl gap-8'>
+            {links.map((link) => {
+              return <NavLink key={link.sectionId} sectionId={link.sectionId} title={link.title}/>
+            })}
+            <ApplyButton/>
+          </div>
+        )
+      }
+    </>
+  )
+}
+
+export const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <nav className='absolute top-0 z-50 mx-auto flex w-full justify-between p-8'>
+      <Logo/>
+      <div className='hidden md:flex'>
+        <NavLinks/>
+      </div>
+      <div className='md:hidden'>
+          {isOpen ? (
+            <div className='flex-col'>
+              <div className='flex justify-end mb-2'>
+                <FiX className='h-10 w-10 text-white cursor-pointer' onClick={() => (setIsOpen(false))}/>
+              </div>
+              <NavLinks isMobile/>
+            </div>
+          ) : (
+            <FiMenu className='h-10 w-10 text-white cursor-pointer' onClick={() => (setIsOpen(true))}/>
+          )}
+        </div>
+    </nav>
   );
 };

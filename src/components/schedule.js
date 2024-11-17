@@ -16,7 +16,7 @@ const DaySchedule = ({ date, events, isSecondDay }) => {
       <h2 className={`text-[3.5vw] text-[#D5CFFFF2] ${isSecondDay ? 'ml-16 md:ml-0' : ''}`}>
         {date}
       </h2>
-      <div className={`space-y-3 ${isSecondDay ? 'ml-16 md:ml-0' : ''}`}>
+      <div className={`space-y-[2vw] ${isSecondDay ? 'ml-16 md:ml-0' : ''}`}>
         {events.map((event, index) => (
           <ScheduleItem key={index} time={event.time} event={event.event} />
         ))}
@@ -47,8 +47,8 @@ export const Schedule = () => {
   ]
 
   return (
-    <Panel className="h-auto md:h-[60vw] pb-16 md:pb-0">
-      <div className='z-10 w-screen text-center mb-8'>
+    <Panel className="h-[90vw] md:h-[60vw]">
+      <div className='z-10 w-screen text-center mb-[2vw]'>
         <H1>Schedule</H1>
       </div>
 

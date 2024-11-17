@@ -41,8 +41,9 @@ function App() {
           <Sponsors />
         </section>
 
-        <div className='h-[20vw]'></div> {/* spacer frame */}
-
+        <div className='h-[20vw] flex justify-center'>
+          <h1 className='absolute bottom-10 text-white text-[2vw] z-50'>Made With 🩷 by HACKDUKE team</h1>
+        </div>
       </Backdrop>
     </>
   )

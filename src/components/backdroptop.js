@@ -55,6 +55,9 @@ export const LeftWall = () => {
             <div className="absolute top-[180vw]"> {/* Probably should be percentages */}
                 <ScheduleLeftSpeakerGroup />
             </div>
+            <img src="/images/StrobeLight1.png" 
+                alt="Strobe Light 1" 
+                className="absolute z-10 left-0 w-screen max-w-none top-[80vw] h-auto"/>
         </>
     )
 }
@@ -77,6 +80,20 @@ export const RightWall = () => {
                 className="absolute z-30 right-[40%] h-[18.75vw]"
                 style={{ transform: 'translateY(940%)' }}
             />
+            <img src="/images/StrobeLight2.png" 
+                alt="Strobe Light 2" 
+                className="absolute z-20 right-0 w-screen max-w-none top-[120vw] h-auto"/>
+            <img src="/images/StrobeLight3.png" 
+                alt="Strobe Light 3" 
+                className="absolute z-20 right-0 w-screen max-w-none top-[112vw] h-auto"/>
+
+            <img src="/images/StrobeLight4.png" 
+                alt="Strobe Light 4" 
+                className="absolute z-20 right-0 w-screen max-w-none top-[200vw] h-auto"/>
+            
+            <img src="/images/StrobeLight4Lighting.png" 
+                alt="Strobe Light 4 Light" 
+                className="absolute z-20 right-0 w-[7vw] max-w-none top-[200vw] h-auto"/>
         </div>
     )
 }
@@ -101,6 +118,7 @@ export const AboutSpeakerGroup = () => {
                 className="absolute w-[50%] max-w-none h-auto z-30"
                 style={{ transform: 'translateY(40%)' }}
             />
+           
         </div>
     )
 }

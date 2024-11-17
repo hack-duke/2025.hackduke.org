@@ -15,7 +15,7 @@ export const BackdropTopAnchor = () => {
         <img
             src="/images/AboutLighting.svg"
             alt="lighting for the about section"
-            className="absolute w-screen z-0 left-[0vw] top-[-50vw]"
+            className="absolute w-screen z-0 left-[0vw] top-[0vw]"
         />
         <img
             src="/images/Tracks Lighting.png"

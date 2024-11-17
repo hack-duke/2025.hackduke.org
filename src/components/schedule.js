@@ -45,7 +45,7 @@ export const Schedule = () => {
   ]
 
   return (
-    <Panel className="h-[75vw] md:h-[60vw]">
+    <Panel className="h-[65vw] md:h-[60vw]">
       <div className='z-10 w-screen text-center'>
         <H1>Schedule</H1>
       </div>

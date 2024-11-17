@@ -22,16 +22,16 @@ export const About = () => {
       {/* Tickets with Separate Texts */}
       <div className="z-50">
         <div className="transform translate-x-[17vw] sm:translate-x-[12vw] translate-y-[20vw] rotate-[-3deg]">
-          <Ticket mainText="230+" subText="hackers" />
+          <Ticket mainText="300+" subText="hackers" />
         </div>
         <div className="transform translate-x-[32vw] sm:translate-x-[35vw] translate-y-[20vw] sm:translate-y-[25vw] rotate-[20deg]">
           <Ticket mainText="100+" subText="projects" />
         </div>
         <div className="transform translate-x-[55vw] sm:translate-x-[60vw] translate-y-[35vw] rotate-[10deg]">
-          <Ticket mainText="50+" subText="mentors" />
+          <Ticket mainText="30+" subText="mentors" />
         </div>
         <div className="transform translate-x-[25vw] translate-y-[27vw] sm:translate-y-[22vw] rotate-[-20deg]">
-          <Ticket mainText="10+" subText="sponsors" />
+          <Ticket mainText="$2,000" subText="in prizes" />
         </div>
       </div>
 
@@ -59,12 +59,12 @@ export const Ticket = ({ mainText, subText }) => { /* We should really convert t
   return (
     <div className="absolute w-[27vw] sm:w-[24vw] max-w-none h-auto">
       <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
-      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm sm:text-[3vw] font-urbanist 
-              transform -translate-y-[0.1vw] -translate-x-[2vw] rotate-[-3deg] sm:-translate-y-[0.7vw] sm:-translate-x-[2vw] sm:rotate-[-3deg]">
+      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-[3vw] font-urbanist 
+              transform -translate-y-[1vw] -translate-x-[2vw] rotate-[-3deg]">
         {mainText}
       </p>
-      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-sm sm:text-lg lg:text-2xl font-urbanist
-                transform -translate-y-[-2.5vw] -translate-x-[1.5vw] rotate-[-3deg] sm:-translate-y-[-2vw] sm:-translate-x-[2vw] sm:rotate-[-3deg]">
+      <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-[2vw] font-urbanist
+                transform -translate-y-[-1.5vw] -translate-x-[1.5vw] rotate-[-3deg]">
         {subText}
       </p>
     </div>

@@ -6,16 +6,16 @@ export const BackdropTopAnchor = () => {
             alt="Background Wall"
             className="absolute top-0 left-0 w-screen h-auto z-0"
         />
-        <div className="absolute top-[10vw] left-0">
+        <div className="absolute top-[10vw] left-[0vw]">
             <LeftWall />
         </div>
-        <div className='absolute top-[50vw] right-0'>
+        <div className='absolute top-[50vw] right-[0vw]'>
             <RightWall />
         </div>
         <img
             src="/images/AboutLighting.svg"
             alt="lighting for the about section"
-            className="absolute w-full z-0 left-0 top-[-50vw]"
+            className="absolute w-screen z-0 left-[0vw] top-[-50vw]"
         />
         <img
             src="/images/Tracks Lighting.png"
@@ -25,13 +25,13 @@ export const BackdropTopAnchor = () => {
         <img
             src="/images/Speaker Lighting.svg"
             alt="Speaker Gradient Lighting"
-            className="absolute w-full z-0 left-0 top-[70vw]"
+            className="absolute w-screen z-0 left-[0vw] top-[70vw]"
         />
 
         <img
             src="/images/Schedule Lighting.png"
             alt="Schedule Gradient Lighting"
-            className="absolute w-full z-0 left-0 top-[140vw]"
+            className="absolute w-screen z-0 left-[0vw] top-[140vw]"
         />
     </div>
 

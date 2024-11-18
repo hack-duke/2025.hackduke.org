@@ -8,32 +8,29 @@ const SponsorLogo = ({ src, alt, className }) => {
     <img
       src={src}
       alt={alt}
-      className={`w-full h-auto z-50 ${className}`}
+      className={`z-50 bg-white bg-opacity-35 p-2 rounded-md ${className}`}
     />
   );
 };
 
 export const Sponsors = () => {
   return (
-    <Panel>
+    <Panel className='h-[70vw]'>
       <div className="ml-[5vw] mr-[5vw]">
         <H1>Sponsors</H1>
-        <div className="flex flex-row gap-6 w-full max-w-screen-md">
-          {/* Row 1 */}
-          <div className="flex flex-col justify-between items-center gap-6">
-            <SponsorLogo src="/images/Optiver.svg" alt="Optiver" className="flex-1" />
-            <SponsorLogo src="/images/HRT.svg" alt="HRT" className="flex-1" />
-            <SponsorLogo src="/images/IMC.svg" alt="IMC" className="flex-1" />
+        <div className="flex flex-row gap-[1vw] w-full max-w-screen-md">
+          <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
+            <SponsorLogo src="/images/sponsors/DE_Shaw.svg" alt="DE Shaw"/>
+            <SponsorLogo src="/images/sponsors/Arize.svg" alt="Arize"/>
           </div>
-          {/* Row 2 */}
-          <div className="flex flex-col justify-between items-center gap-0">
-            <SponsorLogo src="/images/DRW.svg" alt="DRW" className="flex-1" />
-            <SponsorLogo src="/images/Roblox.svg" alt="Roblox" className="flex-1" />
-            <SponsorLogo src="/images/Duke%20I&E.svg" alt="Duke I&E" className="flex-1" />
+          <div className='flex flex-1 flex-col gap-[1vw]'>
+            <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" alt="Duke I&E"/>
+            <SponsorLogo src="/images/sponsors/iiD.png" alt="Duke Rhodes Information Initiative"/>
+            <SponsorLogo src="/images/sponsors/CoLab.png" alt="Duke Innovation CoLab"/>
           </div>
-          {/* Row 3 */}
-          <div className="flex flex-col justify-center items-center gap-0">
-            <SponsorLogo src="/images/Pinecone.svg" alt="Pinecone" className="flex-1" />
+          <div className='flex flex-[0.5] flex-col gap-[1vw]'>
+          <SponsorLogo src="/images/sponsors/Telora.jpeg" alt="Telora"/>
+          <SponsorLogo src="/images/sponsors/Keebio.webp" alt="Keebio"/>
           </div>
         </div>
       </div>

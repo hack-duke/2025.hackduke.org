@@ -5,7 +5,7 @@ import { H1 } from "./typography"
 
 export const FAQ = () => {
   return (
-    <Panel className="h-[90vw] md:h-[60vw]">
+    <Panel className="h-[75vw] md:h-[60vw]">
       <H1 className='text-center mb-30'>FAQ</H1>
       {/* This container hosts the jellyfish images */}
       <JellyFish />
@@ -36,7 +36,7 @@ export const FAQ = () => {
       <img
         src='/images/Ray.png'
         alt='Ray'
-        className='absolute z-20 w-[30vw] right-[15vw] bottom-[0vw] md:bottom-[5vw]'
+        className='absolute z-20 w-[30vw] right-[5vw] bottom-[0vw] md:bottom-[5vw] md:right-[5vw]'
       ></img>
 
       {/*<MusicNotes /> scaling*/}

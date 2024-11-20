@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { Logo } from './logo';
 import { FiMenu, FiX } from 'react-icons/fi';
 
-const ApplyButton = () => {
+const ApplyButton = ({ isMobile }) => {
   return (
-    <button className='text-white text-2xl bg-gradient-to-b from-[#A414B5] to-[#540A5D] pl-8 pr-8 pt-1 pb-1 rounded-xl'>
+    <button className={`text-white ${isMobile ? ('flex') : ('text-2xl bg-gradient-to-b from-[#A414B5] to-[#540A5D] pl-8 pr-8 pt-1 pb-1 rounded-xl')}`}>
       Apply
     </button>
   )
@@ -40,6 +40,7 @@ const NavLinks = ({isMobile}) => {
             {links.map((link) => {
               return <NavLink key={link.sectionId} sectionId={link.sectionId} title={link.title}/>
             })}
+            <ApplyButton isMobile/>
           </div>
         ) : (
           <div className='flex text-2xl gap-8'>

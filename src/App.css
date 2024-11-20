@@ -148,7 +148,7 @@
 .buoy {
   position: absolute;
   max-height: 100%;
-  max-width: 100vw;
+  max-width: 100%;
   scale: 200%;
   transform-origin: 75% 95%; /* 100px from left, 50px from top */
   right: 15vw;

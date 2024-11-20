@@ -155,6 +155,8 @@
   overflow: hidden;
   bottom: -4vw;
   animation-delay: -0.5s;
+  -webkit-transform-style: preserve-3d; /* Safari fix */
+  will-change: transform; /* Performance optimization */
   animation: tilt 5.45s infinite alternate ease-in-out; /* Animation name, duration, repeat, and easing */
 }
 

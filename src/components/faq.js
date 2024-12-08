@@ -1,4 +1,4 @@
-import { GENERAL_QUESTIONS, LOGISTICS_QUESTIONS } from '../consts'
+import { GENERAL_QUESTIONS, LOGISTICS_QUESTIONS, GENERAL_ANSWERS, LOGISTICS_ANSWERS } from '../consts'
 import Accordion from './accordion'
 import { Panel } from "./panel"
 import { H1 } from "./typography"
@@ -13,10 +13,9 @@ export const FAQ = () => {
         <div className='pt-8 flex align-center flex-col max-w-[45vw] md:mr-4'>
           <ListTitle title='General' />
           <Accordion
-            items={GENERAL_QUESTIONS.map(question => ({
+            items={GENERAL_QUESTIONS.map((question, index) => ({
               title: question,
-              content:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+              content: GENERAL_ANSWERS[index]
             }))}
           />
         </div>
@@ -24,10 +23,9 @@ export const FAQ = () => {
         <div className='md:pt-8 flex align-center flex-col ml-20 md:ml-0 max-w-[35vw]'>
           <ListTitle title='Logistics' />
           <Accordion
-            items={LOGISTICS_QUESTIONS.map(question => ({
+            items={LOGISTICS_QUESTIONS.map((question, index) => ({
               title: question,
-              content:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+              content: LOGISTICS_ANSWERS[index]
             }))}
           />
         </div>

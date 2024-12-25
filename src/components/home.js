@@ -12,7 +12,7 @@ export const Home = () => {
       <div className="buoy-wrapper overflow-hidden absolute w-full h-full">
         <img src="/images/Buoy.svg" alt="Description" className="buoy z-10" />
       </div>
-      <img src="/images/HomeStars.png" alt="Description" className="order-first absolute top-12 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
+      <img src="/images/HomeStars.png" alt="Description" className="motion-preset-slide-down  motion-duration-2000 order-first absolute top-12 left-1/2 transform -translate-x-1/2 w-full max-h-45" />
       {/* <img 
         src="/images/CodeForGood.png" 
         alt="Code For Good" 

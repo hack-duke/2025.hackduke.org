@@ -36,7 +36,7 @@ export const FAQ = () => {
       <img
         src='/images/Ray.png'
         alt='Ray'
-        className='absolute z-20 w-[30vw] right-[5vw] bottom-[0vw] md:bottom-[5vw] md:right-[5vw]'
+        className='float2 absolute z-20 w-[30vw] right-[5vw] bottom-[0vw] md:bottom-[5vw] md:right-[5vw]'
       ></img>
 
       {/*<MusicNotes /> scaling*/}
@@ -57,12 +57,12 @@ export const JellyFish = () => (
     <img
       src='/images/PinkJelly.png'
       alt='Pink Jellyfish'
-      className='absolute z-20 w-[20vw] left-[0vw] top-[vw]'
+      className='float1 absolute z-20 w-[20vw] left-[0vw] top-[vw]'
     />
     <img
       src='/images/BlueJelly.png'
       alt='Blue Jellyfish'
-      className='absolute z-20 w-[17vw] bottom-[5vw] left-[15vw]'
+      className='float2 absolute z-20 w-[17vw] bottom-[5vw] left-[15vw]'
     />
   </div>
 )

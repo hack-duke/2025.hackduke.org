@@ -18,21 +18,24 @@ export const Sponsors = () => {
     <Panel className='h-[70vw]'>
       <div className="ml-[5vw] mr-[5vw]">
         <H1>Sponsors</H1>
-        <div className="flex flex-row gap-[1vw] w-full max-w-screen-md">
-          <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
-            <SponsorLogo src="/images/sponsors/DE_Shaw.svg" alt="DE Shaw"/>
-            <SponsorLogo src="/images/sponsors/Arize.svg" alt="Arize"/>
-          </div>
-          <div className='flex flex-1 flex-col gap-[1vw]'>
-            <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" alt="Duke I&E"/>
-            <SponsorLogo src="/images/sponsors/iiD.png" alt="Duke Rhodes Information Initiative"/>
-            <SponsorLogo src="/images/sponsors/CoLab.png" alt="Duke Innovation CoLab"/>
-          </div>
-          <div className='flex flex-[0.5] flex-col gap-[1vw]'>
-          <SponsorLogo src="/images/sponsors/Telora.jpeg" alt="Telora"/>
-          <SponsorLogo src="/images/sponsors/Keebio.webp" alt="Keebio"/>
+        <div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
+          <div className="flex flex-row gap-[1vw] w-full max-w-screen-md">
+            <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
+              <SponsorLogo src="/images/sponsors/DE_Shaw.svg" alt="DE Shaw" className='focus-visible:animate-bounce'/>
+              <SponsorLogo src="/images/sponsors/Arize.svg" alt="Arize"/>
+            </div>
+            <div className='flex flex-1 flex-col gap-[1vw]'>
+              <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" alt="Duke I&E"/>
+              <SponsorLogo src="/images/sponsors/iiD.png" alt="Duke Rhodes Information Initiative"/>
+              <SponsorLogo src="/images/sponsors/CoLab.png" alt="Duke Innovation CoLab"/>
+            </div>
+            <div className='flex flex-[0.5] flex-col gap-[1vw]'>
+            <SponsorLogo src="/images/sponsors/Telora.jpeg" alt="Telora"/>
+            <SponsorLogo src="/images/sponsors/Keebio.webp" alt="Keebio"/>
+            </div>
           </div>
         </div>
+        
       </div>
     </Panel>
   );

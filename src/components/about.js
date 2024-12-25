@@ -57,7 +57,7 @@ export const About = () => {
 
 export const Ticket = ({ mainText, subText }) => { /* We should really convert these to percentages */
   return (
-    <div className="absolute w-[27vw] sm:w-[24vw] max-w-none h-auto">
+    <div className="float2 absolute w-[27vw] sm:w-[24vw] max-w-none h-auto">
       <img src="/images/AboutTicket.png" alt="Ticket" className="w-full h-auto object-cover" />
       <p className="absolute inset-0 flex items-center justify-center text-about_ticket_text font-bold text-[3vw] font-urbanist 
               transform -translate-y-[1vw] -translate-x-[2vw] rotate-[-3deg]">

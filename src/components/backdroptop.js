@@ -80,14 +80,14 @@ export const RightWall = () => {
                 className="absolute z-30 right-[40%] h-[18.75vw]"
                 style={{ transform: 'translateY(940%)' }}
             />
-            <img src="/images/StrobeLight2.png" 
+            <img src="/images/Strobe Light 3.svg" 
                 alt="Strobe Light 2" 
                 className="strobe1 absolute z-20 right-0 w-screen max-w-none top-[120vw] h-auto"/>
-            <img src="/images/StrobeLight3.png" 
+            <img src="/images/Strobe Light 3.svg" 
                 alt="Strobe Light 3" 
                 className="strobe2 absolute z-20 right-0 w-screen max-w-none top-[112vw] h-auto"/>
 
-            <img src="/images/StrobeLight4.png" 
+            <img src="/images/Strobe Light 4.svg" 
                 alt="Strobe Light 4" 
                 className="strobe1 absolute z-20 right-0 w-screen max-w-none top-[200vw] h-auto"/>
             

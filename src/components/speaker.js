@@ -4,18 +4,16 @@ import { H1, P } from "./typography";
 export const Speaker = () => {
   return (
     <Panel>
-      <div className="absolute z-20 w-[40vw] right-[6vw] top-[7vw] text-center">
+      <div className="absolute z-20 w-[40vw] right-[30vw] top-[20vw] text-center" /*className="absolute z-20 w-[40vw] right-[6vw] top-[7vw] text-center"*/>
         <H1>Speaker</H1>
         <P>
-          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
-          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students to create meaningful solutions for social impact.
+          Coming soon!
         </P>
       </div>
 
-      <div className="absolute w-[60vw] left-[-7vw] top-[-5vw]">
+      {/*<div className="absolute w-[60vw] left-[-7vw] top-[-5vw]">
         <SpeakerShark />
-      </div>
+      </div>*/}
 
       <img
         src="/images/fishy.png"

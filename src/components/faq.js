@@ -14,9 +14,9 @@ export const FAQ = () => {
           <ListTitle title='General' />
           <Accordion
             items={GENERAL_QUESTIONS.map(question => ({
-              title: question,
+              title: question.title,
               content:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                question.content
             }))}
           />
         </div>
@@ -25,9 +25,9 @@ export const FAQ = () => {
           <ListTitle title='Logistics' />
           <Accordion
             items={LOGISTICS_QUESTIONS.map(question => ({
-              title: question,
+              title: question.title,
               content:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                question.content
             }))}
           />
         </div>

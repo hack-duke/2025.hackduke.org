@@ -5,6 +5,6 @@
 }
 
 .content.open {
-    max-height: 8vh;
+    max-height: 100vh;
     /* Adjust this value based on your content */
 }

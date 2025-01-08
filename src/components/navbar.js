@@ -4,9 +4,12 @@ import { FiMenu, FiX } from 'react-icons/fi';
 
 const ApplyButton = ({ isMobile }) => {
   return (
-    <button className={`text-white ${isMobile ? ('flex') : ('text-2xl bg-gradient-to-b from-[#A414B5] to-[#540A5D] pl-8 pr-8 pt-1 pb-1 rounded-xl')}`}>
-      Apply
-    </button>
+    <a href='https://portal.hackduke.org/'>
+      <button className={`text-white ${isMobile ? ('flex') : ('text-2xl bg-gradient-to-b from-[#A414B5] to-[#540A5D] pl-8 pr-8 pt-1 pb-1 rounded-xl')}`}>
+        Apply
+      </button>
+    </a>
+    
   )
 }
 

@@ -82,7 +82,7 @@ export const BackdropBottomAnchor = () => {
             <img
                 src="/images/Footer Down Lighting.png"
                 alt="Footer Down Lighting"
-                className="absolute w-[100vw] z-0 right-[0vw] bottom-[0vw]"
+                className="animate-pulse absolute w-[100vw] z-0 right-[0vw] bottom-[0vw]"
             />
         </div>
     )

@@ -19,7 +19,7 @@ function App() {
           display: 'block',
           maxWidth: '100px',
           minWidth: '60px',
-          position: 'fixed',
+          position: 'absolute',
           left: '10px',
           top: '0',
           width: '10%',

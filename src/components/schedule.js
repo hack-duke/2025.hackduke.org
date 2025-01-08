@@ -9,9 +9,9 @@ const ScheduleItem = ({ time, event }) => {
 
   return (
     <div className="flex items-start">
-      <span className="text-[1.05vw] text-[#FBF9F7] font-bold w-[13vw]">{time}</span>
+      <span className="text-[1.45vw] md:text-[1.05vw] text-[#FBF9F7] font-bold w-[13vw]">{time}</span>
       <span 
-        className="text-[1.05vw] text-[#FBF9F7] whitespace-pre-line"
+        className="text-[1.45vw] md:text-[1.05vw] text-[#FBF9F7] whitespace-pre-line"
       >
         {formattedEvent}
       </span>
@@ -26,7 +26,7 @@ const DaySchedule = ({ date, events, isSecondDay }) => {
       <h2 className={`text-[3.5vw] text-[#D5CFFFF2] ${isSecondDay ? 'ml-16 md:ml-0' : ''}`}>
         {date}
       </h2>
-      <div className={`space-y-[2vw] ${isSecondDay ? 'ml-16 md:ml-0' : ''}`}>
+      <div className={`space-y-[1vw] ${isSecondDay ? 'ml-16 md:ml-0' : ''}`}>
         {events.map((event, index) => (
           <ScheduleItem key={index} time={event.time} event={event.event} />
         ))}
@@ -57,7 +57,7 @@ export const Schedule = () => {
     { time: '11:30 pm', event: 'Hacking Ends' },
     { time: '12:00-1:00 pm', event: 'Pitching Workshop @ Room _' },
     { time: '2:00-4:30 pm', event: 'Judging' },
-    { time: '5 pm', event: 'Closing Ceremony @ Geneen Auditorium' }
+    { time: '5:00 pm', event: 'Closing Ceremony @ Geneen Auditorium' }
   ]
 
   return (

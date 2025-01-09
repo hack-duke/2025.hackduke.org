@@ -19,20 +19,29 @@ export const Sponsors = () => {
       <div className="ml-[5vw] mr-[5vw]">
         <H1>Sponsors</H1>
         <div class="delay-[300ms] duration-[600ms] taos:translate-y-[100%] taos:opacity-0" data-taos-offset="300">
-          <div className="flex flex-row gap-[1vw] w-full max-w-screen-md">
+          <div className="flex flex-row gap-[1vw] w-full">
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
               <SponsorLogo src="/images/sponsors/DE_Shaw.svg" alt="DE Shaw" className='focus-visible:animate-bounce'/>
               <SponsorLogo src="/images/sponsors/Arize.svg" alt="Arize"/>
+              <SponsorLogo src="/images/sponsors/Accenture.svg" alt="Accenture"/>
+              <SponsorLogo src="/images/sponsors/Warp.svg" alt="Warp"/>
             </div>
             <div className='flex flex-1 flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" alt="Duke I&E"/>
               <SponsorLogo src="/images/sponsors/iiD.png" alt="Duke Rhodes Information Initiative"/>
               <SponsorLogo src="/images/sponsors/CoLab.png" alt="Duke Innovation CoLab"/>
+              <SponsorLogo src="/images/sponsors/Pratt.png" alt="Pratt"/>
+              <SponsorLogo src="/images/sponsors/RedBull.svg" alt="RedBull"/>
+            </div>
+            <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
+              <SponsorLogo src="/images/sponsors/Monster.webp" alt="Monster"/>
+              <SponsorLogo src="/images/sponsors/CardsAgainstHumanity.svg" alt="CardsAgainstHumanity"/>
             </div>
             <div className='flex flex-[0.5] flex-col gap-[1vw]'>
-            <SponsorLogo src="/images/sponsors/Telora.jpeg" alt="Telora"/>
-            <SponsorLogo src="/images/sponsors/Keebio.webp" alt="Keebio"/>
+              <SponsorLogo src="/images/sponsors/Telora.jpeg" alt="Telora"/>
+              <SponsorLogo src="/images/sponsors/Keebio.webp" alt="Keebio"/>
             </div>
+            <div className='flex flex-[0.5]'/>
           </div>
         </div>
         

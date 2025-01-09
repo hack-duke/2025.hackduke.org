@@ -1,7 +1,7 @@
 const GENERAL_QUESTIONS = [
   {
     title: 'when is the application deadline?',
-    content: 'Applications will close on Thursday, January 16th at 11:59 PM ET, and all decisions will be released by Friday, January 17th. We hope to see everyone there, so please make sure to apply!',
+    content: 'Applications will close on Friday, January 31st at 11:59 PM ET, and all decisions will be released by Saturday, February 1st. We hope to see everyone there, so please make sure to apply!',
   },
   {
     title: 'who can I work with?',

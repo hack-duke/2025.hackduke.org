@@ -6,7 +6,7 @@ export const Home = () => {
       <img className="z-20 flex object-contain max-h-full h-48" src="/images/HackDuke.png" alt="Hack Duke"></img>
       <h1 className="text-2xl z-50"> 02.08-02.09 </h1>
       <h1 className="mt-5 text-2xl z-50"> Application Closes In</h1>
-      <Countdown date={new Date("2025-01-20")} className="text-3xl z-50 font-bold"/>
+      <Countdown date={new Date("2025-01-31")} className="text-3xl z-50 font-bold"/>
 
       
       {/* waves */}

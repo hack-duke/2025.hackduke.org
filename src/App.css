@@ -147,17 +147,22 @@
 
 .buoy {
   position: absolute;
-  max-height: 100%;
-  max-width: 100%;
-  scale: 200%;
-  transform-origin: 75% 95%; /* 100px from left, 50px from top */
-  right: 15vw;
-  overflow: hidden;
-  bottom: -4vw;
+  min-width: 2300px; 
+  min-height: 1000px;
+  transform-origin: 75% 95%;
+  right: 30px;
+  bottom: -8vw;
   animation-delay: -0.5s;
-  -webkit-transform-style: preserve-3d; /* Safari fix */
-  will-change: transform; /* Performance optimization */
-  animation: tilt 5.45s infinite alternate ease-in-out; /* Animation name, duration, repeat, and easing */
+  animation: tilt 5.45s infinite alternate ease-in-out;
+}
+
+@media (max-width: 500px) {
+  .buoy {
+    display: block;
+    margin-left: 12vw;
+    margin-right: -60vw;
+    bottom: -10vw;
+  }
 }
 
 @keyframes tilt {

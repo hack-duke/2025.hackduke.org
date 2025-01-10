@@ -26,7 +26,7 @@ export const Sponsors = () => {
               <SponsorLogo src="/images/sponsors/DE_Shaw.svg" url="https://www.deshaw.com/" alt="DE Shaw" className='focus-visible:animate-bounce'/>
               <SponsorLogo src="/images/sponsors/Arize.svg" url="https://arize.com/" alt="Arize"/>
               <SponsorLogo src="/images/sponsors/Accenture.svg" url="https://www.accenture.com/" alt="Accenture"/>
-              <SponsorLogo src="/images/sponsors/Warp.svg" url="https://www.warp.dev/" alt="Warp"/>
+              <SponsorLogo src="/images/sponsors/Perplexity.png" url="https://www.perplexity.ai/" alt="Perplexity"/>
             </div>
             <div className='flex flex-1 flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" url="https://entrepreneurship.duke.edu/" alt="Duke I&E"/>
@@ -36,6 +36,7 @@ export const Sponsors = () => {
               <SponsorLogo src="/images/sponsors/RedBull.svg" url="https://www.redbull.com/" alt="RedBull"/>
             </div>
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
+            <SponsorLogo src="/images/sponsors/Warp.svg" url="https://www.warp.dev/" alt="Warp"/>
               <SponsorLogo src="/images/sponsors/Monster.webp" url="https://www.monsterenergy.com/" alt="Monster"/>
               <SponsorLogo src="/images/sponsors/CardsAgainstHumanity.svg" url="https://www.cardsagainsthumanity.com/" alt="CardsAgainstHumanity"/>
               {/*<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers"/>*/}

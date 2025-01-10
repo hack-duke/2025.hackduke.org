@@ -9,7 +9,7 @@ const SponsorLogo = ({ src, alt, className, url }) => {
       <img
         src={src}
         alt={alt}
-        className={`bg-white bg-opacity-35 p-2 rounded-md ${className} w-full`}
+        className={`bg-white bg-opacity-35 p-2 rounded-md ${className} w-full transform transition duration-200 hover:scale-105`}
       />
     </a>
   );

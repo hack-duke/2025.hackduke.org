@@ -1,12 +1,13 @@
 import Countdown from 'react-countdown';
+import CountdownRenderer from './countdownRenderer';
 
 export const Home = () => {
   return (
     <div className="flex flex-col items-center justify-center h-screen  bg-gradient-to-b from-home_bg1 to-home_bg2 text-white overflow-hidden w-full relative max-w-full">
       <img className="z-20 flex object-contain max-h-full h-48" src="/images/HackDuke.png" alt="Hack Duke"></img>
       <h1 className="text-2xl z-50"> 02.08-02.09 </h1>
-      <h1 className="mt-5 text-2xl z-50"> Application Closes In</h1>
-      <Countdown date={new Date("2025-01-31")} className="text-3xl z-50 font-bold"/>
+      <h1 className="mt-5 text-2xl z-50"> application closes in</h1>
+      <Countdown date={new Date("2025-01-31")} renderer={CountdownRenderer}/>
 
       
       {/* waves */}

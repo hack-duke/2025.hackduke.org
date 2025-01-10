@@ -47,7 +47,7 @@ export const About = () => {
       <div className="absolute z-1 w-[30vw] right-[3vw] sm:right-[6vw] top-[4vw] sm:top-[7vw] text-center">
         <H1>About</H1>
         <P>
-          Hackduke is the premier intercollegiate hackathon for social good. We unite passionate students
+          HackDuke is the premier intercollegiate hackathon for social good. We unite passionate students
         to create meaningful solutions for social impact.
         </P>
       </div>

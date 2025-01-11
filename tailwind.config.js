@@ -23,7 +23,20 @@ module.exports = {
       about_ticket_text:'#D2CCFC'
 
     },
-    extend: {},
+    extend: {
+      keyframes: { /* only way to apply allow animation on hover */
+        shake: {
+          '0%': { transform: 'translateX(0)' },
+          '25%': { transform: 'translateX(-5px)' },
+          '50%': { transform: 'translateX(5px)' },
+          '75%': { transform: 'translateX(-5px)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+      },
+      animation: {
+        shake: 'shake 0.5s ease-in-out',
+      },
+    },
     fontFamily: {
       sans: ['Urbanist', 'ui-sans-serif', 'system-ui'],
       mono: [

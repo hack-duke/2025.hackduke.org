@@ -27,7 +27,7 @@ export const BackdropBottomAnchor = () => {
 
             <img
                 src="/images/Crab.png"
-                className='absolute z-30 h-auto w-[20vw] bottom-[5vw] left-[30vw] opacity-30'
+                className='hover:animate-shake absolute z-50 h-auto w-[20vw] bottom-[5vw] left-[30vw] opacity-30'
                 alt="Crab Cliff"
             />
 

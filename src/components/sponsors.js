@@ -27,6 +27,7 @@ export const Sponsors = () => {
               <SponsorLogo src="/images/sponsors/Arize.svg" url="https://arize.com/" alt="Arize"/>
               <SponsorLogo src="/images/sponsors/Accenture.svg" url="https://www.accenture.com/" alt="Accenture"/>
               <SponsorLogo src="/images/sponsors/Perplexity.png" url="https://www.perplexity.ai/" alt="Perplexity"/>
+							<SponsorLogo src="/images/sponsors/MathWorks.png" url="https://www.mathworks.com/" alt="MathWorks"/>
             </div>
             <div className='flex flex-1 flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" url="https://entrepreneurship.duke.edu/" alt="Duke I&E"/>

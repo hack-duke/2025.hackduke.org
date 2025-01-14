@@ -54,7 +54,7 @@ export const Schedule = () => {
   const day2Events = [
     { time: '12:00-1:30 am', event: 'Midnight Breakfast ' },
     { time: '10:00-1:00 pm', event: 'Brunch' },
-    { time: '11:30 pm', event: 'Hacking Ends' },
+    { time: '11:30 am', event: 'Hacking Ends' },
     { time: '12:00-1:00 pm', event: 'Pitching Workshop @ Room _' },
     { time: '2:00-4:30 pm', event: 'Judging' },
     { time: '5:00 pm', event: 'Closing Ceremony @ Geneen Auditorium' }

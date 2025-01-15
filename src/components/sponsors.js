@@ -35,12 +35,12 @@ export const Sponsors = () => {
               <SponsorLogo src="/images/sponsors/CoLab.png" url="https://colab.duke.edu/" alt="Duke Innovation CoLab"/>
               <SponsorLogo src="/images/sponsors/Pratt.png" url="https://pratt.duke.edu/" alt="Pratt"/>
               <SponsorLogo src="/images/sponsors/RedBull.svg" url="https://www.redbull.com/" alt="RedBull"/>
+            	<SponsorLogo src="/images/sponsors/Warp.svg" url="https://www.warp.dev/" alt="Warp"/>
             </div>
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
-            <SponsorLogo src="/images/sponsors/Warp.svg" url="https://www.warp.dev/" alt="Warp"/>
               <SponsorLogo src="/images/sponsors/Monster.webp" url="https://www.monsterenergy.com/" alt="Monster"/>
               <SponsorLogo src="/images/sponsors/CardsAgainstHumanity.svg" url="https://www.cardsagainsthumanity.com/" alt="CardsAgainstHumanity"/>
-              {/*<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers"/>*/}
+              {<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers" class="p-0"/>}
             </div>
             <div className='flex flex-[0.5] flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Telora.jpeg" url="https://telora.com/" alt="Telora"/>

@@ -3,13 +3,13 @@ import { Panel } from './panel';
 import { H1 } from './typography';
 
 // Reusable SponsorLogo Component
-const SponsorLogo = ({ src, alt, className, url }) => {
+const SponsorLogo = ({ src, alt, className, url, noPadding=false}) => {
   return (
     <a href={url} className='z-50' target="_blank" rel="noopener noreferrer">
       <img
         src={src}
         alt={alt}
-        className={`bg-white bg-opacity-35 p-2 rounded-md ${className} w-full transform transition duration-200 hover:scale-105`}
+        className={`bg-white bg-opacity-35 rounded-md ${className} w-full transform transition duration-200 hover:scale-105 ${!noPadding && 'p-2'}`}
       />
     </a>
   );
@@ -40,7 +40,7 @@ export const Sponsors = () => {
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
               <SponsorLogo src="/images/sponsors/Monster.webp" url="https://www.monsterenergy.com/" alt="Monster"/>
               <SponsorLogo src="/images/sponsors/CardsAgainstHumanity.svg" url="https://www.cardsagainsthumanity.com/" alt="CardsAgainstHumanity"/>
-              {<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers" class="p-0"/>}
+              {<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers" className="pt-4" noPadding/>}
             </div>
             <div className='flex flex-[0.5] flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Telora.jpeg" url="https://telora.com/" alt="Telora"/>

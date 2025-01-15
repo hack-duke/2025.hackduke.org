@@ -40,7 +40,7 @@ export const Sponsors = () => {
             <div className='flex flex-1 flex-col gap-[1vw]'> {/* Don't love doing it with flex like this */}
               <SponsorLogo src="/images/sponsors/Monster.webp" url="https://www.monsterenergy.com/" alt="Monster"/>
               <SponsorLogo src="/images/sponsors/CardsAgainstHumanity.svg" url="https://www.cardsagainsthumanity.com/" alt="CardsAgainstHumanity"/>
-              {<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers" className="pt-4" noPadding/>}
+              {<SponsorLogo src="/images/sponsors/StandoutStickers.svg" url="http://hackp.ac/mlh-StandOutStickers-hackathons" alt="StandoutStickers" className="pt-[1vw]" noPadding/>}
             </div>
             <div className='flex flex-[0.5] flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Telora.jpeg" url="https://telora.com/" alt="Telora"/>

@@ -16,8 +16,8 @@ const GENERAL_QUESTIONS = [
     content: 'Yes! There will be a grand prize and novice winners for each track. In addition, there will also be many company-sponsored prizes. These often come with the requirement that you incorporate certain technologies into your project. Please check the prizes page and devpost for specifics!',
   },
   {
-    title: 'how can I get involved/help?',
-    content: 'If you are interested in volunteering and helping out with the day-of logistics, please email us at hackers@hackduke.org. If you are interested in mentoring hackers with tech or track-specific knowledge, you can send us an email at hackers@hackduke.org. To get involved with sponsorship opportunities, reach out to us at sponsorship@hackduke.org!',
+    title: 'what is the code of conduct?',
+    content: 'Participants in Code For Good are expected to adhere to the Duke Community Standard and the MLH Code of Conduct (https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md). Failure to comply with these rules may result in removal from the event and potential restrictions on participation in future Code for Good and other HackDuke events.'
   },
 ];
 

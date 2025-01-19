@@ -42,22 +42,22 @@ export const Schedule = () => {
     { time: '11:30 am', event: 'Hacking Starts'},
     { time: '11:30-12:30 pm', event: 'Team Formation & Lunch' },
     { time: '01:00-03:00 pm', event: 'Sponsor Fair @ Kirby Winter Garden'},
-    { time: '03:00-04:00 pm', event: 'Workshop 1 @ Room _' },
-    { time: '04:00-05:00 pm', event: 'Workshop 2 @ Room _' },
-    { time: '05:00-06:00 pm', event: 'Workshop 3 @ Room _' },
+    { time: '03:00-04:00 pm', event: 'AI/LLM Workshop @ Sauer' },
+    { time: '04:00-05:00 pm', event: 'UI/UX Workshop @ Rand' },
+    { time: '05:00-06:00 pm', event: 'Mathworks Workshop @ GM' },
     { time: '06:00-07:00 pm', event: 'Dinner' },
-    { time: '07:00-08:00 pm', event: 'Social Event 1 @ _' },
-    { time: '08:00-09:00 pm', event: 'Social Event 2 @ _' },
-    { time: '09:00-10:00 pm', event: 'Social Event 3 @ _' },
+    { time: '07:00-09:00 pm', event: 'Poker Tournament @ Fuqua' },
+    { time: '07:00-09:00 pm', event: 'Games @ Fuqua' },
+    { time: '11:00-12:00 am', event: 'Stargazing @ Garden' },
   ]
-
+  
   const day2Events = [
-    { time: '12:00-1:30 am', event: 'Midnight Breakfast ' },
+    { time: '12:00-01:30 am', event: 'Midnight Breakfast @ Fuqua' },
     { time: '10:00-1:00 pm', event: 'Brunch' },
     { time: '11:30 am', event: 'Hacking Ends' },
-    { time: '12:00-1:00 pm', event: 'Pitching Workshop @ Room _' },
-    { time: '2:00-4:30 pm', event: 'Judging' },
-    { time: '5:00 pm', event: 'Closing Ceremony @ Geneen Auditorium' }
+    { time: '11:45-12:30 pm', event: 'Pitching Workshop @ Sauer' },
+    { time: '2:00-3:00 pm', event: 'Judging' },
+    { time: '3:00 pm', event: 'Closing Ceremony @ Geneen Auditorium' }
   ]
 
   return (

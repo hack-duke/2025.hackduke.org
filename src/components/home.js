@@ -7,7 +7,7 @@ export const Home = () => {
       <img className="z-20 flex object-contain max-h-full h-48" src="/images/HackDuke.png" alt="Hack Duke"></img>
       <h1 className="text-2xl z-50"> 02.08-02.09 </h1>
       <h1 className="mt-5 text-2xl z-50"> application closes in</h1>
-      <Countdown date={new Date("2025-01-31")} renderer={CountdownRenderer}/>
+      <Countdown date={new Date("2025-02-01T04:59:00Z")} renderer={CountdownRenderer}/>
       <a href='https://portal.hackduke.org/' className='text-2xl bg-gradient-to-b from-[#A414B5] to-[#540A5D] pl-8 pr-8 pt-1 pb-1 rounded-xl mt-5 z-50 transform transition duration-200 hover:scale-105'>Apply Now!</a>
       {/* waves */}
       <section className="waves-container bottom-[0vw]">

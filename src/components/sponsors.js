@@ -28,6 +28,7 @@ export const Sponsors = () => {
               <SponsorLogo src="/images/sponsors/Accenture.svg" url="https://www.accenture.com/" alt="Accenture"/>
               <SponsorLogo src="/images/sponsors/Perplexity.png" url="https://www.perplexity.ai/" alt="Perplexity"/>
 							<SponsorLogo src="/images/sponsors/MathWorks.png" url="https://www.mathworks.com/" alt="MathWorks"/>
+              <SponsorLogo src="/images/sponsors/endex.png" url="https://endex.ai/" alt="Endex"/>
             </div>
             <div className='flex flex-1 flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Duke%20I&E.svg" url="https://entrepreneurship.duke.edu/" alt="Duke I&E"/>
@@ -45,6 +46,7 @@ export const Sponsors = () => {
             <div className='flex flex-[0.5] flex-col gap-[1vw]'>
               <SponsorLogo src="/images/sponsors/Telora.jpeg" url="https://telora.com/" alt="Telora"/>
               <SponsorLogo src="/images/sponsors/Keebio.webp" url="https://keeb.io/" alt="Keebio"/>
+              
             </div>
             <div className='flex flex-[0.5]'/>
           </div>

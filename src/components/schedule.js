@@ -46,10 +46,10 @@ export const Schedule = () => {
     { time: '02:00-03:00 pm', event: 'MLH Co-Pilot Workshop @ Rand'},
     { time: '03:00-04:00 pm', event: 'AI/LLM Workshop @ Sauer' },
     { time: '04:00-05:00 pm', event: 'UI/UX Workshop @ Rand' },
-    { time: '05:00-06:00 pm', event: 'Cursor Workshop @ Sauer' },
+    { time: '05:00-06:00 pm', event: 'Cursor Workshop: Supercharge your Hackathon project with AI @ Sauer' },
     { time: '06:00-07:00 pm', event: 'Dinner' },
-    { time: '07:00-09:00 pm', event: 'Poker Tournament @ Fuqua' },
-    { time: '07:00-09:00 pm', event: 'Games @ Fuqua' },
+    { time: '07:00-09:00 pm', event: 'Poker Tournament @ Jenkins' },
+    { time: '07:00-09:00 pm', event: 'Games @ Sauer' },
     { time: '11:00-12:00 am', event: 'Stargazing @ Garden' },
   ]
   

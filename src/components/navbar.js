@@ -43,14 +43,14 @@ const NavLinks = ({isMobile}) => {
             {links.map((link) => {
               return <NavLink key={link.sectionId} sectionId={link.sectionId} title={link.title}/>
             })}
-            <ApplyButton isMobile/>
+            {/* <ApplyButton isMobile/> */}
           </div>
         ) : (
           <div className='flex text-2xl gap-8'>
             {links.map((link) => {
               return <NavLink key={link.sectionId} sectionId={link.sectionId} title={link.title}/>
             })}
-            <ApplyButton/>
+            {/* <ApplyButton/> */}
           </div>
         )
       }
